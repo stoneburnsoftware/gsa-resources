@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<instances>
+
+<instance>
+  <name> Commercial </name>
+  <pattern>http:\/\/www\.allianzebroker\.co\.uk\/commercial\/.*</pattern>
+  <pattern>http:\/\/www\.allianzretail\.co\.uk\/home\/.*</pattern>
+ <store_regex_or_name> name </store_regex_or_name> 
+</instance>
+
+<instance>
+  <name> Engineering </name>
+  <pattern>http:\/\/www\.allianzebroker\.co\.uk\/commercial\/engineering\/.*</pattern>
+ <store_regex_or_name> name </store_regex_or_name> 
+</instance>
+
+<instance>
+  <name> Engineering </name>
+  <pattern>http:\/\/www\.allianzebroker\.co\.uk\/personal\/.*</pattern>
+ <store_regex_or_name> name </store_regex_or_name> 
+</instance>
+
+</instances>
+
+
+
+
+
+
+

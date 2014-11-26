@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<instances>
+
+<instance>
+  <name> Webpages </name>
+  <pattern>.*/([^.]+)$</pattern>
+ <store_regex_or_name> name </store_regex_or_name> 
+</instance>
+
+<instance>
+  <name> Documents </name>
+  <pattern>.*(.pdf)$</pattern>
+ <store_regex_or_name> name </store_regex_or_name> 
+</instance>
+
+
+<instance>
+  <name> News </name>
+  <pattern>http:\/\/www\.allianzebroker\.co\.uk\/content\/allianzebroker\/en_gb\/home\/news-and-insight\/news\/.*</pattern>
+    <pattern>http:\/\/www\.allianzebroker\.co\.uk\/content\/allianzebroker\/en_gb\/home\/news-and-insight\/news.*</pattern>
+ <store_regex_or_name> name </store_regex_or_name> 
+</instance>
+
+</instances>
+
+
+
+
+
+
+
