@@ -222,7 +222,7 @@ $('.cluster_link').wrapInTag({
 
 $('.cluster_link a').each(function () {
     urlPath = $(this).attr('href');
-    this.href = this.href.replace(/%3Cstrong%3E/g, '').replace(/%3C\/strong%3E/g, '');
+    this.href = this.href.replace(/%3Cstrong%3E/g, '').replace(/%3C\/strong%3E/g, '').replace('<strong>', '').replace('</strong>', '');
 });
 
  //Show div id cluster
