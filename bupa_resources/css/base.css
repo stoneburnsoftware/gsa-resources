@@ -138,7 +138,6 @@ margin-top:15px;
 }
 
 .call-tandc{
-	padding-left:75px;
 	padding-top:10px;
 }
 
@@ -1588,7 +1587,6 @@ and (orientation : landscape) {
 @media all and (max-width: 769px) {
 
 	.call-tandc{
-		padding-left: 10px;
 		padding-top:10px;
 	}
 	
