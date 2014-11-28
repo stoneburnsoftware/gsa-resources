@@ -134,7 +134,12 @@ footer {
 	position:relative;
 	width:100%;
 	height:auto;
-margin-top:180px;
+margin-top:15px;
+}
+
+.call-tandc{
+	padding-left:75px;
+	padding-top:10px;
 }
 
 .clear {
@@ -1582,7 +1587,11 @@ and (orientation : landscape) {
 /* Mobile Styling */
 @media all and (max-width: 769px) {
 
-
+	.call-tandc{
+		padding-left: 10px;
+		padding-top:10px;
+	}
+	
 	#gsa_search, .twitter-typeahead .tt-hint {
 		padding-left: 12px !important;
 	}
