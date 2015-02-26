@@ -2874,7 +2874,7 @@ blockquote {
 /* Effect 1 */
 .box-icon-effect-1 .box-icon i {
 	background: rgba(255,255,255,0.2);
-	color: #0077b5;
+	color: #fff;
 	-webkit-transition: background 0.2s, color 0.2s;
 	-moz-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
