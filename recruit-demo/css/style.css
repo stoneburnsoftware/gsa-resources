@@ -2898,7 +2898,7 @@ blockquote {
 /* Effect 1a */
 .content-box:hover .box-icon-effect-1a .box-icon i {
 	background: rgba(255,255,255,1);
-	color: #3acf87;
+	color: #0077b5;
 }
 
 .content-box:hover .box-icon-effect-1a .box-icon i:after {
