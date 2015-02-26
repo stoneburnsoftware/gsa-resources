@@ -3357,6 +3357,7 @@ blockquote {
 .tp-banner-container {
 	margin: 0 0 50px 0;
 	max-height: 480px;
+	background-color:#FF530D;
 }
 
 /* SMOOTHER ANIMATION ON ANDROID */
@@ -4745,7 +4746,7 @@ ul.product-list li {
 /* Footer
 ---------------------------------------------------------------------- */
 #footer {
-	background: #606060;
+	background: #5F6273;
 	color: #d0d0d0;
 	padding: 35px 0 40px 0;
 	margin: 0;
