@@ -2927,7 +2927,7 @@ blockquote {
 
 .content-box:hover .box-icon-effect-2 .box-icon i {
 	background: #fff;
-	color: #0e83cd;
+	color: #53a443;
 	box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
 }
 
@@ -2997,7 +2997,7 @@ blockquote {
 
 /* Effect 3a */
 .box-icon-effect-3a .box-icon i {
-	color: #a558a6;
+	color: #d77369;
 }
 
 .content-box:hover .box-icon-effect-3a .box-icon i {
@@ -3042,7 +3042,7 @@ blockquote {
 }
 
 .content-box:hover  .box-icon-effect-4 .box-icon i:after { background: #fff; }
-.content-box:hover  .box-icon-effect-4a .box-icon i { color: #ffba35; }
+.content-box:hover  .box-icon-effect-4a .box-icon i { color: #176cee; }
 
 
 /* Accordions & Toggles
