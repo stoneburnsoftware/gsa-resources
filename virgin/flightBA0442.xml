@@ -1,0 +1,15 @@
+<OneBoxResults> 
+   <resultCode>success</resultCode> 
+   <provider>OneBoxDemo</provider> 
+   <searchTerm>BA</searchTerm> 
+   <totalResults>1</totalResults> 
+   <title> 
+     <urlText>Flight Status</urlText>
+    <urlLink>http://www.britishairways.com/rtad/travel/public/en_gb</urlLink>
+   </title> 
+   <IMAGE_SOURCE>http://ba0445.png</IMAGE_SOURCE> 
+   <MODULE_RESULT> 
+     <U>uri</U> 
+    <Title></Title>
+  </MODULE_RESULT> 
+</OneBoxResults> 
