@@ -1,13 +1,13 @@
 <OneBoxResults> 
    <resultCode>success</resultCode> 
    <provider>OneBoxDemo</provider> 
-   <searchTerm>BA</searchTerm> 
+   <searchTerm>VS3003</searchTerm> 
    <totalResults>1</totalResults> 
    <title> 
      <urlText>Flight Status</urlText>
-    <urlLink>http://www.britishairways.com/rtad/travel/public/en_gb</urlLink>
+    <urlLink>http://www.virgin-atlantic.com/gb/en/travel-information/flight-status.html</urlLink>
    </title> 
-   <IMAGE_SOURCE>http://ba0445.png</IMAGE_SOURCE> 
+   <IMAGE_SOURCE>https://cdn.rawgit.com/stoneburnsoftware/gsa-resources/master/virgin/VS3003.png</IMAGE_SOURCE> 
    <MODULE_RESULT> 
      <U>uri</U> 
     <Title></Title>
