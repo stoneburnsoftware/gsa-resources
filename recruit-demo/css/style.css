@@ -6691,8 +6691,9 @@ html[xmlns] .slides {display: block;}
 .the-team-content i,
 .from-the-blog-content i {
 	font-weight: 500;
-	color: #aaa;
-	font-size: 13px;
+	color: #ff530d;
+	font-size: 16px;
+	display: inline;
 }
 
 .the-team-content span,
