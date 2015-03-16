@@ -5073,7 +5073,7 @@ ul.footer-links { margin: 0 0 15px 0; }
 	cursor: pointer;
 }
 
-.orderby { margin-left: 20px; }
+.orderby { margin-left: 470px; }
 .full-width .orderby { margin-left: 0; }
 
 .selectricDisabled {
@@ -5136,7 +5136,7 @@ ul.footer-links { margin: 0 0 15px 0; }
 	overflow: hidden;
 	margin: 0 40px 0 0;
 	padding: 6px 15px;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 28px;
 	color: #fff;
 	min-height: 28px;
