@@ -6699,6 +6699,13 @@ html[xmlns] .slides {display: block;}
 	padding-left:18px;
 }
 
+hover:.the-team-content i,
+.from-the-blog-content i {
+	
+	color: blue;
+	
+}
+
 .the-team-content span,
 .from-the-blog-content span {
 	font-size: 14px;
