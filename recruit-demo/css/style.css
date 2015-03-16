@@ -4824,6 +4824,7 @@ input.newsletter {
 	height: 20px;
 	background-color: #505050;
 	border: none;
+	height:40px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
