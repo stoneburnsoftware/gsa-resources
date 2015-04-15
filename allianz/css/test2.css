@@ -1575,3 +1575,19 @@ td.download a{padding:0 7px 0 14px;background-position:0 -26px}
 .productDownloadsTable .fileicon.icon_ppt,.productDownloadsTable .fileicon.icon_pptx{background-position:0 -798px}
 @media screen and (min-width:480px){.productDownloadsTable .grid3{width:75%;float:right}
 }
+
+
+
+/* CS Overrides */
+
+/* Re-position the ">" attribute text so that it's in line with the attribute header text */
+ul li:before {
+  /* Line ">" up with the common left edges */
+  left: -4px;
+}
+a.dn-attr-v {
+  /* Allow left side spacing for the ">" */
+  padding-left: 15px;
+}
+
+/* When you click "more" on the dynamic navigation facet the styling is different */
