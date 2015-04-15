@@ -1583,14 +1583,14 @@ td.download a{padding:0 7px 0 14px;background-position:0 -26px}
 /* Re-position the ">" attribute text so that it's in line with the attribute header text */
 ul li:before {
   /* Line ">" up with the common left edges */
-  left: -4px;
+  /*left: -4px;*/
 }
 .dn-attr-v {
   /* Allow left side spacing for the ">" */
-  padding-left: 15px !important;
+  /*padding-left: 15px !important;*/
 }
 .dn-attr-text {
- padding-left: 15px;
+ /*padding-left: 15px;*/
 }
 
 /* Right align the remove filter button */
