@@ -1606,6 +1606,7 @@ ul li:before {
 }
 #keymatch_holder a {
  display: block;
+ color: #003781;
  font-weight: bold;
  padding-bottom: 3px;
  line-height: 19px;
