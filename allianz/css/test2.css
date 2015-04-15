@@ -1599,4 +1599,11 @@ ul li:before {
  right: 0 !important;
 }
 
-
+/* Visually separate key matches from organic matches */
+#keymatch_holder {
+ float: right;
+ left: 10px;
+}
+#keymatch_padded {
+ 
+}
