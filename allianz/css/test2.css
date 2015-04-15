@@ -1592,3 +1592,10 @@ ul li:before {
 
 
 /* When you click "more" on the dynamic navigation facet the styling is different */
+
+
+/* Right align "x" */
+.dn-r-img {
+ left: auto;
+ right: 0;
+}
