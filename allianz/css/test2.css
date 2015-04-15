@@ -1585,7 +1585,7 @@ ul li:before {
   /* Line ">" up with the common left edges */
   left: -4px;
 }
-a.dn-attr-v {
+.dn-attr-v {
   /* Allow left side spacing for the ">" */
   padding-left: 15px;
 }
