@@ -1608,10 +1608,13 @@ ul li:before {
  display: block;
  color: #003781;
  font-weight: bold;
- padding-bottom: 3px;
+ padding-bottom: 6px;
  line-height: 19px;
  height: auto;
  font-size: 13px;
+}
+#keymatch_holder br {
+ display: none;
 }
 #keymatch_padded {
  padding: 10px;
