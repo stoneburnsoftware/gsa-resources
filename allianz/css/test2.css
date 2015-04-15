@@ -1605,10 +1605,11 @@ ul li:before {
  width: 74%;
  max-width: 500px;
  left: 10px;
+ background: #eee;
 }
 #keymatch_holder + #keymatch_holder {
- margin-bottom: 1em;
+ margin-bottom: 2em;
 }
 #keymatch_padded {
- 
+ padding: 10px;
 }
