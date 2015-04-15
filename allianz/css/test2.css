@@ -1598,7 +1598,7 @@ ul li:before {
  float: right;
  width: 74%;
  max-width: 500px;
- left: 10px;
+ left: 0;
  background: #eee;
 }
 #keymatch_holder + #keymatch_holder {
