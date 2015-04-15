@@ -1604,6 +1604,11 @@ ul li:before {
 #keymatch_holder + #keymatch_holder {
  margin-bottom: 2em;
 }
+/* "KeyMatch" */
+#keymatch_holder b:first-child {
+ font-size: 10;
+}
+/* Style the title so it matches the organic items */
 #keymatch_holder a {
  display: block;
  color: #003781;
@@ -1613,9 +1618,11 @@ ul li:before {
  height: auto;
  font-size: 13px;
 }
+/* Remove DOM line breaks */
 #keymatch_holder br {
  display: none;
 }
+
 #keymatch_padded {
  padding: 10px;
 }
