@@ -1583,8 +1583,11 @@ td.download a{padding:0 7px 0 14px;background-position:0 -26px}
 /* Re-position the ">" attribute text so that it's in line with the attribute header text */
 
 ul li:before {
-  /* Line ">" up with the common left edges */
-  left: -12px;
+ /* Line ">" up with the common left edges */
+ left: -12px;
+}
+ul li.dn-attr-v:before {
+ left: -16px;
 }
 
 /* Right align the remove filter button */
