@@ -1589,10 +1589,14 @@ ul li:before {
   /* Allow left side spacing for the ">" */
   padding-left: 15px !important;
 }
+.dn-attr-text {
+ padding-left: 15px;
+}
 
 /* Right align the remove filter button */
 .dn-r-img {
  left: auto !important;
+ right: 0 !important;
 }
 
 
