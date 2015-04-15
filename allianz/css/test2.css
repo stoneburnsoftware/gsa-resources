@@ -1599,7 +1599,8 @@ ul li:before {
  width: 74%;
  max-width: 500px;
  left: 0;
- background: #efefef;
+ border-bottom: 1px solid #ccc;
+ background: #f5f5f5;
 }
 #keymatch_holder + #keymatch_holder {
  margin-bottom: 2em;
