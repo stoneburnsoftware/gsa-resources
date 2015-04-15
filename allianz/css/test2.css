@@ -1587,7 +1587,8 @@ ul li:before {
 }
 .dn-attr-v {
   /* Allow left side spacing for the ">" */
-  padding-left: 15px;
+  padding-left: 15px !important;
 }
+
 
 /* When you click "more" on the dynamic navigation facet the styling is different */
