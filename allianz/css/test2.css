@@ -1585,17 +1585,16 @@ ul li:before {
   /* Line ">" up with the common left edges */
   left: -4px;
 }
-.dn-attr-v {
+.dn-attr-v,
+.dn-overflow {
   /* Allow left side spacing for the ">" */
   padding-left: 15px !important;
 }
 
-
-/* When you click "more" on the dynamic navigation facet the styling is different */
-
-
-/* Right align "x" */
+/* Right align the remove filter button */
 .dn-r-img {
  left: auto;
  right: 0;
 }
+
+
