@@ -1627,3 +1627,8 @@ ul li:before {
 #keymatch_padded {
  padding: 10px;
 }
+
+
+#dyn_nav_col > ul > li {
+ padding-left: 12px;
+}
