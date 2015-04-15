@@ -1607,7 +1607,7 @@ ul li:before {
 }
 /* "KeyMatch" */
 #keymatch_holder b {
- font-size: 10 !important;
+ font-size: 10px;
 }
 /* Style the title so it matches the organic items */
 #keymatch_holder a {
