@@ -1605,6 +1605,10 @@ ul li:before {
 #keymatch_holder + #keymatch_holder {
  margin-bottom: 2em;
 }
+/* "KeyMatch" */
+#keymatch_holder b {
+ font-size: 10;
+}
 /* Style the title so it matches the organic items */
 #keymatch_holder a {
  display: block;
@@ -1622,8 +1626,4 @@ ul li:before {
 
 #keymatch_padded {
  padding: 10px;
-}
-/* "KeyMatch" */
-#keymatch_padded b:first-child {
- font-size: 10;
 }
