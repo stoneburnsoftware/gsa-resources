@@ -1599,10 +1599,18 @@ ul li:before {
  width: 74%;
  max-width: 500px;
  left: 0;
- background: #eee;
+ background: #efefef;
 }
 #keymatch_holder + #keymatch_holder {
  margin-bottom: 2em;
+}
+#keymatch_holder a {
+ display: block;
+ font-weight: bold;
+ padding-bottom: 3px;
+ line-height: 19px;
+ height: auto;
+ font-size: 13px;
 }
 #keymatch_padded {
  padding: 10px;
