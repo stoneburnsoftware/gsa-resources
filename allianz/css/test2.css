@@ -1602,7 +1602,12 @@ ul li:before {
 /* Visually separate key matches from organic matches */
 #keymatch_holder {
  float: right;
+ width: 74%;
+ max-width: 500px;
  left: 10px;
+}
+#keymatch_holder + #keymatch_holder {
+ margin-bottom: 1em;
 }
 #keymatch_padded {
  
