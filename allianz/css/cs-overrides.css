@@ -1,0 +1,59 @@
+
+
+/* CS Overrides */
+
+/* Re-position the ">" attribute text so that it's in line with the attribute header text */
+
+ul li:before {
+ /* Line ">" up with the common left edges */
+ left: -12px;
+}
+ul li.dn-attr-v:before {
+ left: -16px;
+}
+
+/* Right align the remove filter button */
+.dn-r-img {
+ left: auto !important;
+ right: 0 !important;
+}
+
+/* Visually separate key matches from organic matches */
+#keymatch_holder {
+ float: right;
+ width: 74%;
+ max-width: 500px;
+ left: 0;
+ border-bottom: 1px solid #ccc;
+ background: #f5f5f5;
+}
+#keymatch_holder + #keymatch_holder {
+ margin-bottom: 2em;
+}
+/* "KeyMatch" */
+#keymatch_holder b {
+ font-size: 10px;
+}
+/* Style the title so it matches the organic items */
+#keymatch_holder a {
+ display: block;
+ color: #003781;
+ font-weight: bold;
+ padding-bottom: 6px;
+ line-height: 19px;
+ height: auto;
+ font-size: 13px;
+}
+/* Remove DOM line breaks */
+#keymatch_holder br {
+ display: none;
+}
+
+#keymatch_padded {
+ padding: 10px;
+}
+
+
+#dyn_nav_col > ul > li {
+ padding-left: 12px;
+}
