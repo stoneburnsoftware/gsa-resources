@@ -20,10 +20,6 @@ a.dn-attr-v {
 
   /* Classes for suggestion box */
 
-
-
-
-
   .ss-embed-mode {
   margin-top: 27px !important;
   right: -20px;
@@ -325,16 +321,7 @@ color:#003781!important;
   width: 15px;
   }
 
-  div.dn-bar {
-  
-  clear: both;
-  font-size: <xsl:value-of select="$res_snippet_size"/>;
-  padding: 6px;
-  width: 79%;
-  position:relative;
-  left:25%;
-  
-  }
+
   div.dn-bar dfn {
   font-size: 1.2em;
   padding: 4px;
@@ -396,9 +383,7 @@ color:#003781!important;
 	background-image: url(https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png);
 	}
   
-   <!-- **************************************************************************
-Styling and overides
-**************************************************************************** -->
+  /*Generic Styles & Overrides*/ 
 
 #social{
   position:relative;
@@ -445,9 +430,7 @@ position: static;
         border:none;
         }
     
- <!-- **************************************************************************
-cs Custom styles
-**************************************************************************** -->
+
 
 td{
   border-right:none!important;
@@ -466,11 +449,6 @@ td{
 
 
 }
-
- <!-- **************************************************************************
-Allianz added
-**************************************************************************** -->
-
 
 
 
