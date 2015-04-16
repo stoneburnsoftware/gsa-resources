@@ -141,16 +141,16 @@ body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-
     height: 12px;
     position: relative;
     right: 10px;
-    background: transparent url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") no-repeat;
+    background: transparent url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") no-repeat;
     float: right;
 }
 div.result-item-hover span.toggle-preview {
     color: #0000cc;
-    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") !important;
+    background-image: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") !important;
 }
 body.previews-enabled span.toggle-preview {
     color: #0000cc !important;
-    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png");
+    background-image: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png");
 }
 
 #inputfield {
@@ -226,7 +226,7 @@ td {
     padding-left: 15px;
     cursor: pointer;
     color: #fff;
-    background: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/close.png") no-repeat scroll 0 0;
+    background: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/close.png") no-repeat scroll 0 0;
 }
 th,
 td {
@@ -291,7 +291,7 @@ div.main-results-without-dn {
     width: 324px;
     height: 223px;
     display: block;
-    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/acrxmhr.png");
+    background-image: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/acrxmhr.png");
     margin-top: 20px;
 }
 #top-bar {
@@ -321,7 +321,7 @@ div.main-results-without-dn {
     position: relative;
     margin-bottom: 30px;
     margin-top: 64px;
-    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/x6OhoKp.png");
+    background-image: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/x6OhoKp.png");
     background-repeat: repeat-x;
     height: 160px;
 }
@@ -332,7 +332,7 @@ div.main-results-without-dn {
     float: right;
     padding-right: 30px;
     margin-top: 30px;
-    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/ftwovxh.png?1");
+    background-image: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/ftwovxh.png?1");
     display: block;
     background-repeat: no-repeat;
 }
@@ -779,7 +779,7 @@ h2.themed-header {
 }
 
 .search-icon-button {
-    background: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/magglass.png");
+    background: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/magglass.png");
     position: relative;
     right: 4px;
     float: right;
@@ -813,7 +813,7 @@ h2.themed-header {
     outline: none;
     cursor: pointer;
     text-indent: -5000em;
-    background: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/As2CHVK.png") no-repeat;
+    background: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/As2CHVK.png") no-repeat;
 }
 .searchBtn {
     background-position: -139px -164px;
