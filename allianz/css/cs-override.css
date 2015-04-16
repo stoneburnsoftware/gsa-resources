@@ -153,7 +153,6 @@ body.previews-enabled span.toggle-preview {
     background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png");
 }
 
-
 /***** General Styles *****/
 
 #social {
@@ -387,6 +386,7 @@ div.main-results-without-dn {
     -moz-hyphens: auto;
     hyphens: auto;
 }
+
 #logo_holder {
     float: left;
     margin: 15px 10px;
@@ -1071,3 +1071,6 @@ h2.themed-header {
         cursor: pointer;
     }
 }
+  
+  
+  
