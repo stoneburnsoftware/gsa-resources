@@ -171,17 +171,1155 @@ a.dn-attr-v {
             height: 12px;
             position:relative;
             right:10px;
-            background: transparent url(https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png) no-repeat;
-      float:right;
+            background: transparent url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") no-repeat;
+				float:right;
             }
             div.result-item-hover span.toggle-preview {
-            color: #0000cc;
-            background-image: url(https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png) !important;
+				color: #0000cc;
+				background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") !important;
             }
             body.previews-enabled span.toggle-preview {
-            color: #0000cc !important;
-            background-image: url(https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png);
+				color: #0000cc !important;
+				background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png");
             }  
+			
+			
+/* General Styles */ 
+
+#social{
+  position:relative;
+  float:right;
+  
+  padding-top:10px;
+}
+
+table{
+  border:none!important;
+}
+
+box-sizing:{ none!important;
+}
+
+
+
+@media screen and (min-width: 787px){
+  
+
+.related-area, .js .related-area 
+{
+
+right: auto;
+position: static;
+}
+}
+
+ .searchClauses{
+        top:107px!important;
+        }
+
+        html, body {
+        width:100%;
+        height:100%;
+        font-size:100%;
+        line-height:120%;
+        margin:0;
+        padding:0;
+        background-color:#cfd0d2;
+        }
+
+        img {
+        border:none;
+        }
+    
+
+td{
+  border-right:none!important;
+
+}
+
+.clearfilter{
+  display:block;
+  width:85px;
+  height:30px;
+  background-color:#003781;
+  text-align:center;
+  color:white!important;
+  line-height:28px;
+
+
+
+}
+
+
+.filter-capsule{
+  font-size: 13px;
+  padding: 2px 5px 2px 5px;
+  border: 1px solid #4886ad;
+  background-color: #003781;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+
+          }
+  .filter-capsule-text
+  {
+  color:white;
+  }
+
+.filter-capsule-close {
+  border-left: 1px solid #fff;
+  font-size: 12px;
+  padding-left: 15px;
+  cursor: pointer;
+  color: #fff;
+  background: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/close.png") no-repeat scroll 0 0;
+}
+th, td {
+  
+  border-top: 0px!important;
+  padding: 0px!important;
+
+}
+
+.divider{
+  
+
+
+}
+
+#breadcrumb li:first-child a {
+  margin-left: -7px;
+  width: 20px;
+  height: 23px;
+  background: url("http://www.allianzretail.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/core/home-icon.png")!important;
+  text-indent: 100%;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 0;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  }
+    .dn-attr-hdr{
+    
+    color:030303;
+    }
+
+        #top_strip {
+        width:100%;
+        height:auto;
+        }
+
+         #main_strip {
+        width:100%;
+        height:auto;
+        }
+
+        #holder {
+        position:relative;
+        max-width:980px;
+        height:auto;
+        margin:0 auto;
+        background-color:#fff;
+        border-left:solid 1px #c9c9c9;
+        border-right:solid 1px #c9c9c9;
+        border-bottom:solid 1px #c9c9c9;
+        overflow:hidden;
+        clear:both;
+        }
+
+        div.main-results-without-dn {
+        position:relative;
+        float:left;
+        width:100%;
+
+        }
+        #header1 {
+        position:relative;
+        width:635px;
+        margin:10px;
+        
+        }
+    
+        #header1-right {
+        float:right;
+        width:325px;
+    height:111px;
+    display:block;
+    
+        }
+    
+    
+        #header2-right {
+        float:right;
+        width:324px;
+    height:223px;
+    display:block;
+    
+    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/acrxmhr.png");
+    margin-top:20px;
+    
+        }
+    
+        #top-bar {
+        text-align:center;
+        width: 310px;
+    height:32px;
+    display:block;
+    background-color:#003781;
+    margin: 0 auto;
+        }
+    .white{
+    color:white;
+    vertical-align: middle;
+    float:left;
+    padding-top:10px;
+    padding-left:10px;
+    }
+    
+    .text-right{
+    color:#4d4d4d;
+    text-align:center;
+    font-size:14px;
+    vertical-align: middle;
+    line-height: 27px;
+    padding-left:8px;
+    }
+    
+        #sub-header {
+        position:relative;
+    margin-bottom:30px;
+    margin-top:64px;
+    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/x6OhoKp.png");
+    background-repeat: repeat-x;
+        height:160px;
+    
+        }
+        #sub-sub-header {
+        position:relative;
+        width:150px;
+        height:91px;
+    float:right; 
+    padding-right:30px;
+    margin-top:30px;
+    background-image: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/ftwovxh.png?1");
+    display:block;
+    background-repeat: no-repeat;
+        }
+    
+        #content {
+    display:block;
+    background-repeat: no-repeat;
+    float:right;
+        }
+        #holder-block {
+    padding-top:20px;
+    display:block;
+    width:100px;
+    height:100px;
+    float:left;
+    padding:10px;
+        }
+    
+    #hr {
+        border-top:1px dotted #000;
+        padding-top:10px;
+    }
+
+
+        #search_field {
+        float:right;
+        width:335px;
+        height:auto;
+        margin-top:25px;
+        }
+
+        #search_input_holder {
+        float:left;
+        width:685px;
+        }
+
+        #search_input {
+        position:relative;
+        width:620px;
+        float:left;
+        margin-right:10px;
+        }
+
+        .search_button {
+        float:right;
+        width:45px;
+        height:29px;
+        }
+
+        #middle_panel {
+        height:auto;
+        float:left;
+        width:100%;
+        }
+
+        #footer_xslt {
+        position:relative;
+        width:100%;
+        height:auto;
+        }
+
+        .clear {
+        clear:both;
+        }
+
+        .word_break {
+        -ms-word-break: break-all;
+        word-break: break-all;
+
+        // Non standard for webkit
+        word-break: break-word;
+
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        }
+
+        #logo_holder {
+        float:left;
+        margin:15px 10px;
+        }
+
+        .footer_left_image {
+        float:left;
+        width:auto;
+        height:55px;
+        }
+
+        .footer_right_image {
+        float:right;
+        width:auto;
+        height:55px;
+        }
+
+        p.footer_copyright {
+        font-size: 11px;
+        line-height: 18px;
+        color:#787773;
+        margin: 0 10px;
+        clear:both;
+        }
+
+        #bottom_navigation_holder {
+        position:relative;
+        width:350px;
+        height:auto;
+        font-size:0.875em;
+        }
+
+        #next_link,
+        #previous_link {
+        float:left;
+        }
+
+    	.dn-attr-hdr:before,.attr_2_dn:before,.attr_3_dn:before,.attr_5_dn:before,.attr_6_dn:before,.attr_7_dn:before,.attr_8_dn:before,
+    	#attr_2_more_less:before,#attr_3_more_less:before,#attr_4_more_less:before,#attr_5_more_less:before,#attr_6_more_less:before,
+    	#attr_7_more_less:before,#attr_8_more_less:before{
+   			background-image:none;
+    	}
+    
+    	ul li{
+    		padding:0px !important;
+    		margin:0px !important;
+    	}
+    
+    
+        .pagination_link_selected {
+	        float:left;
+	        color:#fff !important;
+	        text-decoration:none;
+	        width:22px;
+	        height:22px;
+	        background-color:#e5e5e5;
+	        padding:3px 0;
+	        line-height:14px;
+	        border:1px #939598 solid;
+	        margin-right: 2px;
+        }
+
+        .pagination_link {
+	        float:left;
+	        color:#333 !important;
+	        background-color:none !important;
+	        text-decoration:none;
+	        width:22px;
+	        height:22px;
+	        padding:3px 0;
+	        line-height:14px;
+	        border:1px #939598 solid;
+	        margin-right:2px;
+
+        }
+
+        .pagination_link a {
+        text-decoration:none;
+        }
+
+        hr#sep_bar {
+        background-color:#3366cc;
+        height:1px;
+        border:none;
+        }
+
+        #search_info_bar {
+        position:relative;
+        margin-left:165px;
+        }
+
+        #search_info_bar_header {
+        float:left;
+        }
+
+        #search_info {
+        
+        
+        }
+
+        #sort_by_holder {
+        position:relative;
+        float:left;
+        width:auto;
+        height:auto;
+        display:none;
+        }
+
+        .sort_by_links {
+        float:left;
+        width:auto;
+        height:auto;
+        }
+
+        span.sort_by_selected {
+        font-weight:bold;
+        color:#015da8;
+        padding:0 10px;
+        }
+
+        a.sort_link:link,
+        a.sort_link:visited {
+        padding:0 10px;
+        text-decoration:none;
+        color:#333;
+        }
+
+        .l {
+        display:block;
+        color:#003781;
+        font-weight:bold;
+        text-decoration:none !important;
+        padding-bottom:3px;
+        line-height:19px;
+        height:auto;
+        font-size:13px;
+        }
+
+        h4.l {
+        font-size:1.313em;
+        margin:0;
+        }
+
+        #cluster_holder {
+        float:left;
+        }
+
+        .cluster_link {
+        float:left;
+        
+        height:auto;
+        }
+
+        #keymatch_holder {
+        position:relative;
+        width:100%
+        max-width:500px;
+        left:10px;
+        }
+
+        #keymatch_padded {
+        
+        }
+
+        .bottom_search_box_holder {
+        position: relative;
+        max-width: 350px;
+        margin: 15px auto;
+        }
+
+        #dn_button {
+        display:none;
+        }
+
+        #adv_search_holder {
+        position:relative;
+        width:100%;
+        height:auto;
+        }
+
+        .adv_search_strip {
+        position:relative;
+        width:100%;
+        height:auto;
+        padding:10px 0;
+        }
+
+        .adv_search_heading {
+        float:left;
+        min-width:200px;
+        height:auto;
+        font-size:13px;
+        }
+
+        .adv_search_text {
+        float:left;
+        min-width:300px;
+        height:auto;
+        font-size:13px;
+        }
+
+        .adv_search_margin {
+        margin-left:200px;
+        }
+
+        .adv_search_input {
+        float:left;
+        width:auto;
+        height:auto;
+        }
+
+        .adv_search_num {
+        float:left;
+        width:auto;
+        height:auto;
+        }
+
+        .snippet_result {
+        font-size:0.75em;
+        line-height:19px;
+        display:inline-block;
+        min-height:0;
+        max-width:560px;
+        }
+
+        h3.meta_section {
+        margin:0;
+        padding:0 0 5px;
+        text-transform: uppercase;
+        font-size:14px;
+        font-weight:bold;
+        line-height:19px;
+        height:auto;
+        }
+
+        .result_holder:first-child {
+        border-top:solid 1px #c9c9c9;
+        }
+
+        blockquote.g {
+        margin:0 !important;
+        }
+        
+        blockquote:before {
+  			background-image: none !important;
+  			height: 0px;
+		}
+
+        blockquote.g .result_holder {
+        border-top:none;
+        }
+
+        .result_holder {
+        border-top:none;
+        border-bottom:solid 1px #c9c9c9;
+        padding-bottom:20px;
+        padding-top:20px;
+        max-width:760px;
+        }
+
+        .result_holder p {
+        display:none;
+        }
+
+        .result_holder a {
+        text-decoration:none;
+        }
+
+        .thumbnail_holder {
+        float:left;
+        width:auto;
+        height:auto;
+        margin-right:20px;
+        }
+
+        .content_icon {
+        float:left;
+        width:18px;
+        height:auto;
+        margin-right:10px;
+        }
+
+        .previous_button {
+	        background:url("http://www.allianzretail.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/bgs/pagination.png")no-repeat;
+	        background-position: -19px;
+	        width:22px;
+	        height:22px;
+	        border: 1px #939598 solid;
+	        text-decoration: none;
+	        text-align: center;
+	        margin-right:2px;
+        }
+
+
+        .next_button {
+        	background: url("http://www.allianzretail.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/bgs/pagination.png") no-repeat -38px 0; 
+		  	text-align: center;
+		 	text-decoration: none;
+		  	border: 1px #939598 solid;      
+	        width:22px;
+	        height:22px;
+        }
+
+
+
+        #filter_results_header {
+	        margin-left:6px;
+	        border-bottom:solid 1px #c9c9c9;
+	        padding:5px;
+		    background-color:#003781;
+		    color:white;
+		    text-align:center;
+        }
+
+        .dn-attr {
+        border-bottom:solid 1px #c9c9c9;
+        padding:13px 0;
+        margin-left:6px;
+        }
+
+        #filter_tabs {
+        font-size:0.875em;
+        float:left;
+        display:none;
+        }
+
+        a.filter_all {
+        color:#333;
+        width:auto;
+        height:auto;
+        margin:0 25px;
+        text-decoration:none;
+        }
+
+        a.filter_all:hover,
+        a.filter_images:hover,
+        a.filter_videos:hover {
+        color:#015da8;
+        }
+
+        a.filter_selected {
+        color:#015da8 !important;
+        font-weight:bold;
+        }
+
+        a.filter_images {     
+        color:#333;
+        width:auto;
+        height:auto;
+        margin-right:25px;
+        padding-left:25px;
+        text-decoration:none;
+        background-position: -116px -156px;
+        background-size: 153px auto;
+        }
+
+       
+
+        a.filter_videos {     
+        color:#333;
+        width:auto;
+        height:auto;
+        margin-right:25px;
+        padding-left:25px;
+        text-decoration:none;
+        background-position: -127px -100px;
+        background-size: 167px auto;
+        }
+
+      
+
+        a.synonym_link {
+        font-weight:bold;
+        text-decoration:none;
+        color:#015da8 !important;
+        }
+
+        a.synonym_link:hover {
+        text-decoration:underline;
+        }
+
+        .i {
+        color:#939598;
+        }
+
+        #results_time {
+        background-color:#333;
+        /*padding:10px;*/
+        margin:0;
+        width:940px;
+        }
+
+        #results_time h2 {
+        width:auto;
+        margin:0;
+        padding:0;
+        }
+
+        .total_results_time_took {
+        float:right;
+        padding:10px;
+        }
+
+        .search_results_title_holder {
+        width:auto;
+        height:auto;
+        float:left;
+        color:#fff;
+        padding:10px;
+        }
+
+        h2.search_took_header {
+        font-size:1.4em;
+        }
+
+        h2.themed-header {
+        font-size: 1.375em;
+        font-weight: normal;
+        line-height:19px;
+        }
+
+        #header h1 {
+        float: left;
+        font-size:3.75em;
+        color: #015ca8;
+        padding-top:15px;
+        padding-left:10px;
+        height:auto;
+        line-height:90px;
+    display:none;
+        }
+
+        #search_holder {
+        
+        
+        margin-bottom: 25px;
+        
+    padding-top: 10px;
+        width:100%;
+        max-width:702px;
+   
+        }
+    
+    
+        #block_search_holder {
+        background-color: #red;
+        border-bottom: 1px solid #C9C9C9;
+        margin-bottom: 25px;
+        padding: 25px 10px;
+       
+    height:50px;
+        }
+
+        .search_label {
+        float: left;
+        font-size: 1.125em;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 7px;
+        }
+
+        #inputfield {
+        border: 1px solid #C9C9C9;
+        position: relative;
+        margin-top: 0;
+        padding: 6px 0 6px 6px;
+        width: 100%;
+        color:black;
+        }
+        
+        .search-icon-button{
+		  background: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/magglass.png");
+		  position: relative;
+		  right: 4px;
+		  float: right;
+		  top: -24px;
+		  height: 20px;
+		  width: 25px;
+		  border: none;
+        }
+
+        .search-icon-button:hover{
+			background-position: 0px -20px;
+		}
+    
+        #inputfield2 {
+	        border: 1px solid #C9C9C9;
+	        position: relative;
+	        margin-top: 0;
+	   	 	margin-bottom:10px;
+	        padding: 6px 0 6px 6px;
+	        width: 295px;
+        }
+    
+    #searchArea input.button.siteSearchBtn, #searchArea input.phoneSearchBtn, #searchArea button.phoneSearchBtn {
+	    border: 0;
+	    width: 23px;
+	    height: 20px;
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    top: 1px;
+	    right: 1px;
+	    outline: none;
+	    cursor: pointer;
+	    text-indent: -5000em;
+	    background: url("https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/allianz/images/As2CHVK.png") no-repeat;
+    }
+
+        
+
+        .searchBtn {
+        background-position: -139px -164px;
+        background-size: 200px auto;
+        background-color: #333;
+        border: medium none;
+        cursor: pointer;
+        height: 29px;
+        text-indent: -99999em;
+        width: 45px;
+        float:right;
+        }
+
+
+        .searchBtn:hover {
+        background-color: #015ca8;
+        }
+
+        .details {
+        font-size:0.75em;
+        width:auto;
+        line-height:19px;
+        }
+
+        #mobile_pagination {
+        position: relative;
+        width: auto;
+        min-width:300px;
+        height: auto;
+        margin:20px auto;
+        display:none;
+        font-size: large;
+        }
+
+        .mobile_pagination_links {
+        float:left;
+        width:140px;
+        height:auto;
+       
+        text-align:center;
+        padding: 10px 0;
+        color:#333;
+        text-decoration:none;
+        }
+
+        .mobile_faded {
+        color:#9c9c9c;
+        cursor:default;
+        }
+
+        #no_documents_matched {
+        margin: 0 10px;
+        }
+
+        .adaptive-footerTc {
+        width: 940px;
+        margin: 0 auto;
+        text-align: center;
+        float:none; !important;
+        }
+
+        .adaptive-footerContent .adaptive-footerTc h4 {
+        margin-left: 10px !important;
+        }
+
+        .adaptive-footerTc .links {
+        text-align:left;
+        }
+
+        .desktopBtn {
+        color:white !important;
+        }
+
+        .adaptive-footer.adaptive-wrapper {
+        border:none !important;
+        }
+
+        .adaptive-sponsors {
+        border:none !important;
+        }
+
+        #right_panel {
+        width:329px;
+    height:123px;
+        background-color:white;
+    float:right;
+        }
+    
+        #top_panel {
+        width:329px;
+    height:28px;
+    text-color:white;
+        background-color:#003781;
+        }
+
+ .header{
+        width:100%;
+        height:auto;
+
+        }
+
+        @media all and (max-width: 650px) {
+        body {
+        width:100% !important;
+        min-width:100% !important;
+        }
+
+        #holder {
+        width:1002px !important;
+        border:none !important;
+        }
+
+        #AZAEM_header_cont {
+        width:90% !important;
+        margin:0 auto !important;
+        }
+    
+       
+
+        #middle_panel {
+        width:100% !important;
+        min-width:315px;
+        }
+
+        #dyn_nav {
+        display:none;
+        }
+
+        .main-results {
+        width:100% !important;
+        margin:0 auto !important;
+        }
+
+        .hide_for_mobile {
+        display:none !important;
+        }
+
+        #logo_holder {
+        width:auto !important;
+        }
+
+        #header h1 {
+        font-size: 3em;
+        }
+    
+    .h1{
+    color:#003781!important;
+    }
+    
+
+        #search_holder {
+        width:auto !important;
+        }
+
+        #search_input_holder {
+        float:left;
+        width:100% !important;
+        height:auto;
+        margin-top:20px;
+        }
+
+        #search_input {
+        float:left;
+        position:relative;
+        width: 80% !important;
+        }
+
+        #search_field {
+        float:none;
+        position:relative;
+        margin-bottom:15px;
+        width:auto !important;
+        }
+
+        .footer_left_image {
+        float:none !important;
+        position:relative;
+        width: 210px !important;
+        margin: 0 auto;
+        }
+
+        .footer_right_image {
+        float:none !important;
+        position:relative;
+        width: 210px !important;
+        margin: 0 auto;
+        }
+
+        #search_info_bar {
+        float:none;
+        position:relative;
+        margin:0 auto;
+        }
+
+        #sort_by_holder {
+        float:none;
+        position:relative;
+        width:90% !important;
+        margin:0 auto;
+        display:none;
+        }
+
+        .sort_by_links {
+        float:none;
+        position:relative;
+        }
+
+        #keymatch_holder {
+        width:100% !important;
+        }
+
+        #clustering {
+        margin-left:15px !important;
+        }
+
+        #cluster_holder {
+        float:none !important;
+        position:relative !important;
+        }
+
+        .cluster_link {
+        position:relative !important;
+        float:none;
+        max-width: 400px !important;
+        }
+
+        #next_link {
+        margin-left:15px;
+        }
+
+        #adv_search_holder {
+        width:90% !important;
+        margin: 0 auto;
+        }
+
+        .adv_search_heading {
+        float:none !important;
+        position:relative;
+        }
+
+        .adv_search_text {
+        float:none !important;
+        position:relative;
+        }
+
+        .adv_search_input {
+        float:none !important;
+        position:relative;
+        }
+
+        .adv_search_margin {
+        margin:0 !important;
+        }
+
+        .bottom_search_box_holder {
+        margin-left:15px !important;
+        }
+
+        #inputfield {
+        width: 100% !important;
+        }
+
+        .search_label {
+        float:none;
+        position:relative;
+        }
+
+        #results_time {
+        width:100% !important;
+        }
+
+        .total_results_time_took {
+        display:none;
+        }
+
+        #filter_tabs {
+        margin-left:0 !important;
+        float:none !important;
+        }
+
+        h4.l {
+        line-height:21px;
+        }
+
+        #top_strip header .header {
+        display:inline-block;
+        }
+       
+       #main_strip header .header {
+        display:inline-block;
+        }
+
+
+        .sgp-theme header {
+        margin-left:0 !important;
+        }
+
+        .sgp-theme header h3 {
+        margin-bottom:0 !important;
+        }
+
+        .snippet_result {
+        font-size:0.75em;
+        line-height:19px;
+        display:block;
+        min-height:0;
+        }
+
+    .facebook_sl {
+           float:left;
+           margin-right:10px;
+    }
+
+    .twitter_sl {
+           float:left;
+           cursor:pointer;
+           margin-right:10px;
+    }
+
+    .google_sl {
+           float:left;
+           cursor:pointer;
+    }
+    
+        }
+
+
+
   
   
   
