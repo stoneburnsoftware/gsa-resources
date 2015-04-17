@@ -197,10 +197,8 @@
           }
 
 		    div.dn-bar {
-          
-          padding: 6px;
-          width: 79%;
-          position:relative;
-          left:25%;
-          float:left;
+			  padding: 6px;
+			  position:relative;
+			  left:25%;
+			  float:left;
           }
