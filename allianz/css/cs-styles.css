@@ -556,9 +556,7 @@ h4.l {
     max-width: 350px;
     margin: 15px auto;
 }
-#dn_button {
-    display: none;
-}
+
 #adv_search_holder {
     position: relative;
     width: 100%;
