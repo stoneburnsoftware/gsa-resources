@@ -142,8 +142,9 @@ body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-
     position: relative;
     right: 10px;
     background: transparent url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") no-repeat;
-    float: right;
-}
+	float: left;
+  margin-left: 25px;
+  }
 .search-info-holder{
 	padding-bottom:5px;
 }
