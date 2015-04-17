@@ -202,3 +202,64 @@
 			  left:25%;
 			  float:left;
           }
+
+		  
+@media all and (max-width: 650px) {
+
+     #dyn_nav {
+          position:relative !important;
+          width:100% !important;
+          height: 500px;
+          min-height:0 !important;
+          display:none;
+          -moz-box-shadow: 0 0 5px 5px #c3c3c3;
+          -webkit-box-shadow: 0 0 5px 5px#c3c3c3;
+          box-shadow: 0 0 5px 5px #c3c3c3;
+          padding-bottom:15px;
+     }
+
+     #dyn_nav_col {
+          position:relative;
+          max-height:500px !important;
+          overflow:scroll;
+          overflow-x:hidden;
+          background-color:#f1faff !important;
+     }
+
+     .dn-attr {
+          background-color:#f1faff !important;
+          margin-left:10px;
+     }
+
+	#dn_button {
+		padding: 12px 30px;
+		text-align: center;
+		border: 1px solid #4ab2db;
+		background: #4ab2db;
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top, #4ab2db 0%, #3d9ecc 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4ab2db), color-stop(100%, #3d9ecc));
+		background: -webkit-linear-gradient(top, #4ab2db 0%, #3d9ecc 100%);
+		background: -o-linear-gradient(top, #4ab2db 0%, #3d9ecc 100%);
+		background: -ms-linear-gradient(top, #4ab2db 0%, #3d9ecc 100%);
+		background: linear-gradient(to bottom, #4ab2db 0%, #3d9ecc 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ab2db', endColorstr='#3d9ecc', GradientType=0 );
+		display: block;
+		margin: 0 auto;
+		color: white;
+		font-size: 20px;
+		line-height: 20px;
+		margin-top: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.0);
+		font-family: 'Source Sans Pro', sans-serif;
+		cursor:pointer;
+		clear:both;
+	}
+
+		 #dn_button:hover {
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3886A8), to(#3F96BB));
+			-webkit-box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.1);
+			border: 1px solid #357E9E;
+			color:#fff;
+		 }
+	}
