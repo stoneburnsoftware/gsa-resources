@@ -1,15 +1,4 @@
-/* Re-position the ">" attribute text so that it's in line with the attribute header text */
 
-ul li:before {
-    /* Line ">" up with the common left edges */
-    
-    left: -4px;
-}
-a.dn-attr-v {
-    /* Allow left side spacing for the ">" */
-    
-    padding-left: 15px;
-}
 /* When you click "more" on the dynamic navigation facet the styling is different */
 /* extracted styles from GSA search page */
 /**
@@ -666,7 +655,6 @@ blockquote.g .result_holder {
     height: 22px;
 }
 #filter_results_header {
-    margin-left: 6px;
     border-bottom: solid 1px #c9c9c9;
     padding: 5px;
     background-color: #003781;

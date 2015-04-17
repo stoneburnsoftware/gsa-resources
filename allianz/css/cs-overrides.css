@@ -4,10 +4,6 @@
 
 /* Re-position the ">" attribute text so that it's in line with the attribute header text */
 
-ul li:before {
- /* Line ">" up with the common left edges */
- left: -12px;
-}
 ul li.dn-attr-v:before {
  left: -16px;
 }
