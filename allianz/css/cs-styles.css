@@ -152,6 +152,9 @@ body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-
 padding-right:7px;
 }
 
+ .result-url{
+	padding-bottom:5px;
+ }
 
 div.result-item-hover span.toggle-preview {
     color: #0000cc;
@@ -520,7 +523,6 @@ a.sort_link:visited {
 .l {
     display: block;
     color: #003781;
-    font-weight: bold;
     text-decoration: none !important;
     padding-bottom: 3px;
     line-height: 19px;
