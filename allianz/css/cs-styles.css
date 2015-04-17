@@ -442,7 +442,7 @@ p.footer_copyright {
 #attr_8_more_less:before {
     background-image: none;
 }
-ul li {
+#dyn_nav_col ul li {
     padding: 0px !important;
     margin: 0px !important;
 }
