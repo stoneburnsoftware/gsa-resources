@@ -196,3 +196,11 @@
           width: 100%;
           }
 
+		    div.dn-bar {
+          
+          padding: 6px;
+          width: 79%;
+          position:relative;
+          left:25%;
+          float:left;
+          }
