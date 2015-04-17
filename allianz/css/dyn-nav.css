@@ -19,6 +19,7 @@
           min-height:100%;
           margin-right:20px;
           clear:both;
+		  display:block;
           }
           div.dn-hdr {
           background-color: #3366FF;
