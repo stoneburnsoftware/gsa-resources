@@ -144,6 +144,10 @@ body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-
     background: transparent url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") no-repeat;
     float: right;
 }
+.result-title, .doc-type-label{
+	float:left;
+}
+
 div.result-item-hover span.toggle-preview {
     color: #0000cc;
     background-image: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") !important;
