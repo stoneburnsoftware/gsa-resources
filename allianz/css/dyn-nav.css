@@ -207,6 +207,15 @@
 		  #dn_button {
 			display: none;
 		}
+		
+		  .dn-img {
+			  background: transparent url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/FBI1wtG.png") no-repeat scroll 0 0;
+			  border: 0 none;
+			  height: 12px;
+			  position: relative;
+			  width: 12px;
+          }
+		
 		  
 @media all and (max-width: 650px) {
 
