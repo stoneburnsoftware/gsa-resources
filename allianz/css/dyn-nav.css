@@ -15,10 +15,10 @@
           background: #FFF none repeat scroll 0 0;
           position: relative;
           float:left;
-          width: 145px;
+          width: 22%;
           min-height:100%;
-          margin-right:20px;
-          clear:both;
+		  margin-right: 3%;
+		  clear:both;
 		  display:block;
           }
           div.dn-hdr {
