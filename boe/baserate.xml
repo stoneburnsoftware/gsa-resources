@@ -7,7 +7,7 @@
      <urlText>Base rate</urlText>
     <urlLink>http://www.virgin-atlantic.com/gb/en/travel-information/flight-status.html</urlLink>
    </title> 
-   <IMAGE_SOURCE>https://cdn.rawgit.com/stoneburnsoftware/gsa-resources/master/boe/images/baserate.png</IMAGE_SOURCE> 
+   <IMAGE_SOURCE>https://raw.githubusercontent.com/stoneburnsoftware/gsa-resources/master/boe/images/baserate.png</IMAGE_SOURCE> 
    <MODULE_RESULT> 
      <U>uri</U> 
     <Title></Title>
