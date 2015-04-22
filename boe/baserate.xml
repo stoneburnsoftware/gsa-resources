@@ -7,7 +7,7 @@
      <urlText>Current Base rate</urlText>
     <urlLink>http://www.bankofengland.co.uk/boeapps/iadb/Repo.asp</urlLink>
    </title> 
-   <IMAGE_SOURCE>https://raw.git.com/stoneburnsoftware/gsa-resources/master/boe/images/baserate.png</IMAGE_SOURCE> 
+   <IMAGE_SOURCE>https://rawgit.com/stoneburnsoftware/gsa-resources/master/boe/images/baserate.png</IMAGE_SOURCE> 
    <MODULE_RESULT> 
      <U>uri</U> 
     <Title></Title>
