@@ -138,7 +138,7 @@ body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-
 	padding-bottom:5px;
 }
 
-.doc-type-label{
+.result-title, .doc-type-label{
 	float:left;
 }
 
