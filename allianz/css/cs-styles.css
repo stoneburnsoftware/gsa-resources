@@ -122,7 +122,9 @@ div.result-item {
 div.result-item .dps-viewer {
     margin: 0;
 }
-body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-item-hover .s {} span.toggle-preview {
+body.previews-enabled div.result-item-hover {} 
+body.previews-enabled div.result-item-hover .s {} 
+span.toggle-preview {
     display: inline-block;
     margin-left: 5px;
     cursor: pointer;
@@ -130,6 +132,7 @@ body.previews-enabled div.result-item-hover {} body.previews-enabled div.result-
     height: 12px;
     position: relative;
     right: 10px;
+	top:3px;
     background: transparent url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/EL6BWzj.png") no-repeat;
 	float: left;
   margin-left: 25px;
