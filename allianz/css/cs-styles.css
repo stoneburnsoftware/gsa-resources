@@ -1668,3 +1668,12 @@ font-family: Verdana,Geneva,sans-serif;
 .search-form + .list-box-wrap:before {
   display: none; }
   
+  .searchResults .search-form .advanced-search label {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 0 7px 0 0;
+  float: left;
+  font-weight: normal;
+  font-size: .9em;
+}
+  
