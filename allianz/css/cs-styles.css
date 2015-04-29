@@ -1273,7 +1273,7 @@ Hangouts
 
 
 
-GSA search results form css.cssOpen
+.cssOpen
   .ie8 .searchResults .search-form .advanced-search button.SearchBtn:after {
   top: 0px; }
 
@@ -1445,8 +1445,226 @@ font-family: Verdana,Geneva,sans-serif;
     font-size: 1em;
   }
 }
-2 of 2 items
-search-results.cssGSA search results form css.cssDisplaying search-results.css.  
+
   
-  
+/** VARIBLES **/
+/********************************************************************/
+/* line 3, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+.ie8 .searchResults .search-form .advanced-search button.SearchBtn:after {
+  top: 0px; }
+
+/* line 6, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+.ie8 .searchResults .search-form .advanced-search button.SearchBtn {
+  top: 8px; }
+
+/* line 10, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+.searchResults .container {
+  padding-left: 0;
+  padding-right: 0; }
+/* line 12, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+.searchResults .grid3 .floatR {
+  width: 50%;
+  max-width: 148px;
+  float: right;
+  padding: 0 0 0 0.538461538462em;
+  display: none; }
+/* line 19, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+.searchResults .search-form {
+  margin: 0 7px;
+  background: #e5e5e5;
+  /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(29%, #eeeeee), color-stop(29%, #eeeeee));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#eeeeee',GradientType=0 );
+  /* IE6-8 */ }
+  /* line 31, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-position: 0 -408px;
+    background-repeat: repeat-x;
+    margin: 0; }
+  /* line 40, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-position: 0 -408px;
+    background-repeat: repeat-x;
+    margin: 0; }
+  /* line 49, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form .adv-panel-container .with-js {
+    border-top: 2px solid #fff;
+    display: none; }
+    /* line 52, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .adv-panel-container .with-js > fieldset > legend {
+      padding-top: 7px; }
+    /* line 55, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .adv-panel-container .with-js:after {
+      content: "";
+      display: block;
+      height: 7px;
+      background-color: #eeeeee; }
+  /* line 62, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form fieldset {
+    margin: 0;
+    padding: 0 7px;
+    position: relative;
+    background-color: transparent; }
+  /* line 69, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form .advanced-search {
+    padding: 0; }
+    /* line 71, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search.field {
+      background: none; }
+    /* line 74, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search label {
+      margin-top: 5px;
+      display: inline-block;
+      padding: 0 7px 0 0;
+      float: left;
+      font-weight: normal;
+      font-size: 0.9em; }
+    /* line 82, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search input {
+      margin: 8px 0 4px;
+      padding: 2px 0 2px 5px;
+      width: 100%;
+      float: none;
+      height: 27px; }
+    /* line 89, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search span {
+      position: relative;
+      margin: 1px 0 0 0;
+      display: block;
+      width: 100%;
+      float: left; }
+    /* line 97, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search span.info-layer {
+      width: 20px; }
+    /* line 98, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search span.inputSearchQuery {
+      width: 110px; }
+    /* line 99, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search button.SearchBtn {
+      border: 0;
+      width: 24px;
+      height: 24px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 9px;
+      right: 0px;
+      color: #4D4D4D;
+      outline: none;
+      cursor: pointer;
+      text-indent: -9999px;
+      background-color: transparent; }
+      /* line 113, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+      .searchResults .search-form .advanced-search button.SearchBtn:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        height: 17px;
+        width: 17px;
+        background-position: 0 -1225px;
+        background-repeat: no-repeat;
+        border: 1px solid #A7A7A7;
+        background-color: #8F9299; }
+      /* line 126, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+      .searchResults .search-form .advanced-search button.SearchBtn:hover:after, .searchResults .search-form .advanced-search button.SearchBtn:focus:after {
+        border: 1px solid #4d4d4d; }
+    /* line 131, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search .adv-search-link {
+      position: static;
+      border-left: none; }
+      /* line 135, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+      .searchResults .search-form .advanced-search .adv-search-link span {
+        border-left: none;
+        float: left;
+        height: 22px;
+        width: 14px;
+        height: 2em; }
+        /* line 141, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+        .searchResults .search-form .advanced-search .adv-search-link span:after {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-position: 0 -213px;
+          background-repeat: no-repeat;
+          top: 0.7em;
+          position: absolute;
+          left: 3px; }
+      /* line 153, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+      .searchResults .search-form .advanced-search .adv-search-link a {
+        color: #4D4D4D;
+        display: block;
+        float: left;
+        line-height: 26px;
+        padding-left: 5px;
+        text-decoration: none;
+        font-size: 0.846153846154em; }
+        /* line 161, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+        .searchResults .search-form .advanced-search .adv-search-link a:hover {
+          text-decoration: underline; }
+    /* line 167, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .advanced-search .adv-search-link.with-js {
+      display: block; }
+  /* line 172, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form .adv-panel-container .buttons .btn {
+    font-size: 0.857142857143em; }
+
+@media screen and (min-width: 260px) {
+  /* line 184, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .grid3 .floatR {
+    display: block; } }
+@media screen and (min-width: 400px) {
+  /* line 194, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form .field.advanced-search .adv-search-link {
+    position: absolute;
+    right: 7px;
+    border-left: 1px solid #f3f3f3; }
+    /* line 198, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .search-form .field.advanced-search .adv-search-link span {
+      border-left: 1px solid #DDDDDD; } }
+@media screen and (min-width: 480px) {
+  /* line 209, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .grid1 {
+    width: 25%;
+    float: left;
+    padding: 0px 7px 7px 0px;
+    border-left: 2px solid transparent; }
+  /* line 215, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .grid3 {
+    width: 75%;
+    float: right;
+    padding: 0 7px 7px;
+    border-left: 2px solid transparent; }
+    /* line 220, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+    .searchResults .grid3 .floatR {
+      display: none; } }
+@media screen and (min-width: 787px) {
+  /* line 237, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+  .searchResults .search-form .adv-panel-container .buttons {
+    padding: 2px 0px 7px 0px; } }
+/* line 249, ../../../../../../../../design/common-foundation/assets/sass/common_foundation/search-results/assets/css/search-results.scss */
+.search-form + .list-box-wrap:before {
+  display: none; }
   
