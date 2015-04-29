@@ -1079,3 +1079,374 @@ h2.themed-header {
 	margin-top:54px;
 }
   
+/* Search Form Styling */
+
+
+Added Kumar, Pranav (Allianz UK). Press backspace to remove.
+
+Skip to content
+Using Cloud Sherpas Mail with screen readers
+ Training  ▾
++Paul
+Boomerang
+Search
+
+
+
+Mail 
+COMPOSE
+Labels
+Inbox (1)
+Starred
+Important
+Sent Mail
+Drafts (174)
+Categories
+Circles
+Boomerang
+Boomerang-Outbox
+Boomerang-Returned
+Google
+Sherpas (1)
+Expenses (8)
+Github
+Holidays
+HR (1)
+Meeting Invitations (7)
+Micheal Docs
+SalesForce (791)
+Timecards (251)
+Training
+More 
+  More  Boomerang 
+2 of 3  
+ 
+Expand all Print all In new window
+IMPORTANT: GSA Issues
+Inbox
+x  
+Google/Projects/Allianz
+x 
+
+Bunday, Marlon (Allianz UK)	
+Hi all, Sorry to spring this on you now but it looks like we’ve got some addi...
+Attachments28 Apr (1 day ago)
+5 older messages
+
+Bunday, Marlon (Allianz UK)	
+Thanks Paul. There was one other issue with the background gradient image not...
+09:40 (6 hours ago)
+
+Paul Thomas <paul.thomas@cloudsherpas.com>
+11:14 (4 hours ago)
+
+to Marlon, Adam, Ken, Steve, Pranav 
+Hi, 
+
+@Marlon - Is this an issue for ken or for us? 
+
+@Ken - Regarding the changes to match the search form styling from the main site. Is it possible to either send me the CSS for the search form and i can include in our files or pull it through into the the GSA css that you have?
+
+Please advise at your earliest, happy to have a call to discuss. 
+
+Paul
+-- 
+Cloud Sherpas
+PAUL THOMAS    google technical consultant
+
+paul.thomas@cloudsherpas.com
+
+mobile: 07708953010
+
+Cloud Sherpas	 
+See how you compare to your peers: 
+access the Enterprise Cloud Report
+
+
+Hansard, Ken (Allianz UK) <ken.hansard@allianz.co.uk>
+Attachments15:54 (3 minutes ago)
+
+to me 
+Hi 
+Paul
+Search results.css is the full css code
+GSA searchresults is my attempt to just supply what you need
+Also in this file is supporting CSS for generic buttons, input, form etc which will be needed but you may have to isolate this if it upsets parent elements
+ 
+ 
+Kind Regards,
+ 
+Ken Hansard
+Digital Designer
+Kind Regards,
+ 
+Ken Hansard
+Digital Designer
+ 
+Allianz Insurance plc | 2nd Floor Westside | GHO
+Tel:       +44 (0) 1483 552856
+IPT:      101856
+Email:   ken.hansard@allianz.co.uk
+ 
+From: Paul Thomas [mailto:paul.thomas@cloudsherpas.com] 
+Sent: 29 April 2015 11:14
+To: Bunday, Marlon (Allianz UK)
+Cc: Adam Shah; Hansard, Ken (Allianz UK); Lynch, Steve (Allianz UK); Kumar, Pranav (Allianz UK)
+Subject: Re: IMPORTANT: GSA Issues
+ 
+This message contained potentially unsafe HTML script
+code that was removed.
+Now you can safely view, open or edit this message.
+
+Hi, 
+ 
+@Marlon - Is this an issue for ken or for us? 
+ 
+@Ken - Regarding the changes to match the search form styling from the main site. Is it possible to either send me the CSS for the search form and i can include in our files or pull it through into the the GSA css that you have?
+ 
+Please advise at your earliest, happy to have a call to discuss. 
+ 
+Paul
+ 
+On 29 April 2015 at 09:40, Bunday, Marlon (Allianz UK) <marlon.bunday@allianz.co.uk> wrote:
+Thanks Paul.
+ 
+There was one other issue with the background gradient image not appearing until halfway down the search results page which didn?t fit in my screen shot. I?ve mentioned this to Ken, so this email is just to document that also needs a fix.
+ 
+Marlon
+ 
+From: Paul Thomas [mailto:paul.thomas@cloudsherpas.com] 
+Sent: 28 April 2015 12:50
+To: Bunday, Marlon (Allianz UK); Adam Shah
+Cc: Hansard, Ken (Allianz UK); Lynch, Steve (Allianz UK); Kumar, Pranav (Allianz UK)
+Subject: Re: IMPORTANT: GSA Issues
+ 
++adam 
+ 
+Thanks Marlon, 
+ 
+We'll review and add them to the issues logs.
+ 
+Paul
+ 
+On 28 April 2015 at 12:45, Bunday, Marlon (Allianz UK) <marlon.bunday@allianz.co.uk> wrote:
+Hi all,
+ 
+Sorry to spring this on you now but it looks like we?ve got some additional issues which have reared their heads since indexing the DOCUMENTS area. This breaks down into 2 areas, DESIGN and TECHNICAL.
+ 
+I?ve created a quick screen grab which highlights the errors as I found them. Some are styling issues for us, some are search result issues for Cloud Sherpas, which are all notated.
+
+
+ 
+--
+
+2 Attachments 
+ 
+Preview attachment search-results.css
+
+Style Sheet
+search-results.css
+Preview attachment GSA search results form css.css
+
+Style Sheet
+GSA search results form css.css
+	
+Click here to Reply or Forward
+Using 9.09 GB
+Manage
+Programme Policies
+Powered by Google
+Last account activity: 12 minutes ago
+Details
+People (5)
+Hansard, Ken (Allianz UK)
+Add to circles
+
+Show details
+Hangouts
+
+ 
+ 
+ 
+
+
+
+
+
+GSA search results form css.cssOpen
+  .ie8 .searchResults .search-form .advanced-search button.SearchBtn:after {
+  top: 0px; }
+
+.ie8 .searchResults .search-form .advanced-search button.SearchBtn {
+  top: 8px; }
+
+.searchResults .container {
+  padding-left: 0;
+  padding-right: 0; }
+.searchResults .search-form {
+  margin: 0 7px;
+  background: #e5e5e5;
+  /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(29%, #eeeeee), color-stop(29%, #eeeeee));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #e5e5e5 0%, #eeeeee 29%, #eeeeee 29%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#eeeeee',GradientType=0 );
+  /* IE6-8 */ }
+  .searchResults .search-form:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-position: 0 -408px;
+    background-repeat: repeat-x;
+    margin: 0; }
+  .searchResults .search-form:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-position: 0 -408px;
+    background-repeat: repeat-x;
+    margin: 0; }
+  .searchResults .search-form .advanced-search {
+    padding: 0; }
+    .searchResults .search-form .advanced-search.field {
+      background: none; }
+    .searchResults .search-form .advanced-search label {
+      margin-top: 5px;
+      display: inline-block;
+      padding: 0 7px 0 0;
+      float: left;
+      font-weight: normal;
+      font-size: 0.9em; }
+      .searchResults .search-form .advanced-search input {
+      margin: 8px 0 4px;
+      padding: 2px 0 2px 5px;
+      width: 100%;
+      float: none;
+      height: 27px; }
+    .searchResults .search-form .advanced-search span {
+      position: relative;
+      margin: 1px 0 0 0;
+      display: block;
+      width: 100%;
+      float: left; }
+    .searchResults .search-form .advanced-search span.info-layer {
+      width: 20px; }
+    .searchResults .search-form .advanced-search span.inputSearchQuery {
+      width: 110px; }
+    .searchResults .search-form .advanced-search button.SearchBtn {
+      border: 0;
+      width: 24px;
+      height: 24px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 9px;
+      right: 0px;
+      color: #4D4D4D;
+      outline: none;
+      cursor: pointer;
+      text-indent: -9999px;
+      background-color: transparent; }
+      .searchResults .search-form .advanced-search button.SearchBtn:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        height: 17px;
+        width: 17px;
+        background-position: 0 -1225px;
+        background-repeat: no-repeat;
+        border: 1px solid #A7A7A7;
+        background-color: #8F9299; }
+      .searchResults .search-form .advanced-search button.SearchBtn:hover:after, .searchResults .search-form .advanced-search button.SearchBtn:focus:after {
+        border: 1px solid #4d4d4d; }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   supporting styles may need more specificity
+*/
+fieldset {
+border: 0;
+}
+div {
+display: block;
+}
+.field {
+margin-bottom: 2px;
+min-height: 2em;
+background-image: none;
+background-color: #cfd0d2;
+position: static;
+float: left;
+width: 100%;
+padding: 7px;
+}
+.field label {
+  position: relative;
+  background: transparent;
+  padding: 7px 7px .78125%;
+  cursor: default;
+}
+@media screen and (min-width: 787px){
+  .field>label {
+    width: 49.453125%;
+  }
+}
+
+button {
+text-transform: none;
+line-height: normal;
+font-size: 100%;
+vertical-align: baseline;
+font-family: Verdana,Geneva,sans-serif;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.field input {
+min-height: 13px;
+line-height: 13px;
+margin: 0;
+padding: 4px 4px 5px 5px;
+width: 100%;
+font-size: 16px;
+line-height: 1.142857142857em;
+border: 1px solid #a7a7a7;
+-moz-box-shadow: rgba(0,0,0,0.2) 0 1px 4px 0 inset;
+-webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 4px 0 inset;
+box-shadow: rgba(0,0,0,0.2) 0 1px 4px 0 inset;
+vertical-align: baseline;
+}
+input[type="text"], input[type="email"], textarea {
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+font-family: Verdana,Geneva,sans-serif;
+}
+@media screen and (min-width: 787px){
+  .field input {
+    width: 49.453125%;
+    float: left;
+    margin: 0 0 0 1.09375%;
+    font-size: 1em;
+  }
+}
+2 of 2 items
+search-results.cssGSA search results form css.cssDisplaying search-results.css.  
+  
+  
+  
