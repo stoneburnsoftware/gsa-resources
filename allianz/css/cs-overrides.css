@@ -76,6 +76,7 @@ ul li.dn-attr-v:before {
 	background-repeat: repeat-x;
     background-position: 0 -408px;
 	height:1px;
+	content: "";
 }
 .searchform{
 	margin-top:5px;
