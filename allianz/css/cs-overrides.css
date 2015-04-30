@@ -70,6 +70,16 @@ ul li.dn-attr-v:before {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5',endColorstr='#eeeeee',GradientType=0);
   background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/repeatx-sdddf3a6062.png");
   background-repeat: repeat-x;
+  padding: 8px;
+}
+
+.searchForm{
+	margin-top:5px;
+}
+
+.searchLabel{
+  font-size: 0.9em;
+  padding-bottom:8px;
 }
 
 
