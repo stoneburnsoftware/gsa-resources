@@ -164,12 +164,12 @@ body.previews-enabled span.toggle-preview {
 }
 
 #inputfield {
-    border: 1px solid #C9C9C9;
-    position: relative;
-    margin-top: 0;
-    padding: 6px 0 6px 6px;
-    width: 100%;
-    color: black;
+margin: 8px 0 4px;
+  padding: 2px 0 2px 5px;
+  width: 100%;
+  float: none;
+  height: 27px;
+  border: 1px solid #a7a7a7;
 }
 
 /***** General Styles *****/
