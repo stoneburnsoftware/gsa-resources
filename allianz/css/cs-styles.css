@@ -777,13 +777,13 @@ h2.themed-header {
 
 
 .SearchBtn{
-	content: "";
+  content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  right: 3px;
-  height: 17px;
-  width: 17px;
+  top: 27px;
+  right: 6px;
+  height: 19px;
+  width: 19px;
   background-position: 0 -1225px;
   background-repeat: no-repeat;
   border: 1px solid #a7a7a7;

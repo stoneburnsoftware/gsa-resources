@@ -82,7 +82,8 @@ ul li.dn-attr-v:before {
 }
 #searchform{
 	margin-top:5px;
-	padding: 8px; 
+	padding: 7px; 
+	position:relative;
 }
 
 .searchLabel{
