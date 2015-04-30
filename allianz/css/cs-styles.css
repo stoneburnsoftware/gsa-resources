@@ -792,8 +792,8 @@ h2.themed-header {
   background-repeat: no-repeat;
 }
 
-.search-icon-button:hover {
-    background-position: 0px -20px;
+.SearchBtn:hover {
+     border: 1px solid #4d4d4d;
 }
 #inputfield2 {
     border: 1px solid #C9C9C9;
