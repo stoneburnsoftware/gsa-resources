@@ -780,16 +780,23 @@ h2.themed-header {
     margin-top: 7px;
 }
 
-.search-icon-button {
-    background: url("https://rawgit.com/stoneburnsoftware/gsa-resources/master/allianz/images/magglass.png");
-    position: relative;
-    right: 4px;
-    float: right;
-    top: -24px;
-    height: 20px;
-    width: 25px;
-    border: none;
+
+.SearchBtn{
+	content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 17px;
+  width: 17px;
+  background-position: 0 -1225px;
+  background-repeat: no-repeat;
+  border: 1px solid #a7a7a7;
+  background-color: #8f9299;
+  background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/core-se37251be3a.png");
+  background-repeat: no-repeat;
 }
+
 .search-icon-button:hover {
     background-position: 0px -20px;
 }
