@@ -111,6 +111,7 @@ div#ss_debug_console table td.no {
 
 div.result-item {
     position: relative;
+	margin-top:5px;
 }
 .non-previewable {
     background-color: transparent !important;
