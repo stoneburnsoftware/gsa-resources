@@ -1688,6 +1688,8 @@ font-family: Verdana,Geneva,sans-serif;
   background: -ms-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
   background: linear-gradient(to bottom,#e5e5e5 0,#eee 29%,#eee 29%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5',endColorstr='#eeeeee',GradientType=0);
+    background-image: url("default-styles/assets/images/static/sprites/repeatx-sdddf3a6062.png");
+  background-repeat: repeat-x;
 }
 
 
