@@ -80,7 +80,7 @@ ul li.dn-attr-v:before {
   background-position: 0 -408px;
   background-repeat: repeat-x;
 }
-.searchform{
+#searchform{
 	margin-top:5px;
 	padding: 8px; 
 }
