@@ -71,12 +71,11 @@ ul li.dn-attr-v:before {
   background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/repeatx-sdddf3a6062.png");
   background-repeat: repeat-x;
   padding: 8px;
-    content: "";
+  content: "";
   display: block;
   width: 100%;
   height: 1px;
   background-position: 0 -408px;
-  background-repeat: repeat-x;
   margin: 0;
 }
 
