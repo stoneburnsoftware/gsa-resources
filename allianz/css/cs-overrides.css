@@ -71,7 +71,7 @@ ul li.dn-attr-v:before {
   padding: 8px; 
 }
 
-#search_holder::before, #search_holder::after{
+#search_holder::before{
 	background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/repeatx-sdddf3a6062.png");
 	background-repeat: repeat-x;
     background-position: 0 -408px;
