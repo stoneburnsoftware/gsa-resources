@@ -88,6 +88,10 @@ ul li.dn-attr-v:before {
   font-size: 0.9em;
 }
 
+.form-error{
+color:#FFA319; padding:0px 0px 0px 8px;
+}
+
 
 
 
