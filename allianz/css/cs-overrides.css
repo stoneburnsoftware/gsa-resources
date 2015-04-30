@@ -75,7 +75,6 @@ ul li.dn-attr-v:before {
 	background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/repeatx-sdddf3a6062.png");
   content: "";
   display: block;
-  position: absolute;
   bottom: 0;
   height: 1px;
   width: 100%;
