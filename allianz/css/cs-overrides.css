@@ -59,7 +59,7 @@ ul li.dn-attr-v:before {
 /* Search Form Styling */
 
 #search_holder{
-  background: #e5e5e5;
+  background: #e5e5e5 !important;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
   background: -moz-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
   background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#e5e5e5),color-stop(29%,#eee),color-stop(29%,#eee));
