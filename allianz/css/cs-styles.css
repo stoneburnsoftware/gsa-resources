@@ -1676,4 +1676,21 @@ font-family: Verdana,Geneva,sans-serif;
   font-weight: normal;
   font-size: .9em;
 }
+
+#search_holder{
+  margin: 0 7px;
+  background: #e5e5e5;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#e5e5e5),color-stop(29%,#eee),color-stop(29%,#eee));
+  background: -webkit-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
+  background: -o-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
+  background: -ms-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
+  background: linear-gradient(to bottom,#e5e5e5 0,#eee 29%,#eee 29%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5',endColorstr='#eeeeee',GradientType=0);
+}
+
+
+
+
   
