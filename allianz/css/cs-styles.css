@@ -583,6 +583,9 @@ h4.l {
     width: auto;
     height: auto;
 }
+.snippet-box{
+	padding-top:5px;
+}
 .snippet_result {
     font-size: 0.75em;
     line-height: 19px;
