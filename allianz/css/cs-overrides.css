@@ -112,7 +112,6 @@ label.error:before{
   border-style: solid;
   border-width: 0 9px 9px 9px;
   border-color: transparent transparent #edbd00 transparent;
-  background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/core-se37251be3a.png");
   }
   
 label.error:after{
