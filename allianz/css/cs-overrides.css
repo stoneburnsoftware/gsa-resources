@@ -68,6 +68,7 @@ ul li.dn-attr-v:before {
   background: -ms-linear-gradient(top,#e5e5e5 0,#eee 29%,#eee 29%);
   background: linear-gradient(to bottom,#e5e5e5 0,#eee 29%,#eee 29%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5',endColorstr='#eeeeee',GradientType=0);  
+  margin-bottom:6px;
 }
 
 #search_holder:before, #search_holder:after{
