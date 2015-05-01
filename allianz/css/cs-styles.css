@@ -779,13 +779,16 @@ h2.themed-header {
     margin-top: 7px;
 }
 
+.searchform-input-div{
+	position:relative;	
+}
 
 .SearchBtn{
   content: "";
   display: block;
   position: absolute;
-bottom:15px;
-  right: 10px;
+  bottom: 8px;
+  right: 4px;
   height: 19px;
   width: 19px;
   background-position: 0 -1225px;

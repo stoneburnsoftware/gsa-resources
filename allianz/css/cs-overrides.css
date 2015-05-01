@@ -99,6 +99,7 @@ border-width: 2px;
   font-style: italic;
   position: relative;
   min-height: 38px;
+  top:11px;
     border: 1px solid #edbd00;
 }
 
