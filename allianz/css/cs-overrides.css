@@ -89,8 +89,17 @@ ul li.dn-attr-v:before {
   font-size: 0.9em;
 }
 
-.form-error{
-color:#FFA319; padding:0px 0px 0px 8px;
+.error{
+border-width: 2px;
+  font-weight: normal;
+  font-size: .923076923077em;
+  background: #f7f7f7;
+  padding: 5px 30px 5px 7px;
+  margin-top: 7px;
+  font-style: italic;
+  position: relative;
+  min-height: 38px;
+    border: 1px solid #edbd00;
 }
 
 
