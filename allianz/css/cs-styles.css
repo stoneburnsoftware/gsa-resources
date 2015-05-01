@@ -165,7 +165,7 @@ body.previews-enabled span.toggle-preview {
 }
 
 #inputfield {
-margin: 8px 0 4px;
+margin: 8px 0 0px;
   padding: 2px 0 2px 5px;
   width: 100%;
   float: none;
@@ -787,7 +787,7 @@ h2.themed-header {
   content: "";
   display: block;
   position: absolute;
-  bottom: 8px;
+  bottom: 4px;
   right: 4px;
   height: 19px;
   width: 19px;
