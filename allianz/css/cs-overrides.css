@@ -89,7 +89,7 @@ ul li.dn-attr-v:before {
   font-size: 0.9em;
 }
 
-label.error{
+span.error{
 border-width: 2px;
   font-weight: normal;
   font-size: .923076923077em;
@@ -104,7 +104,7 @@ border-width: 2px;
     border: 1px solid #edbd00;
 }
 
-label.error:before{
+span.error:before{
   content: "";
   position: absolute;
   top: -9px;
@@ -116,7 +116,7 @@ label.error:before{
   border-color: transparent transparent #edbd00 transparent;
   }
   
-label.error:after{
+span.error:after{
   content: "";
   position: absolute;
   top: 5px;
