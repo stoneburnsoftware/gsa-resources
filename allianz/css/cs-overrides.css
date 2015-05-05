@@ -71,15 +71,7 @@ ul li.dn-attr-v:before {
   margin-bottom:6px;
 }
 
-#search_holder:before, #search_holder:after{
-	background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/repeatx-sdddf3a6062.png");
-	content: "";
-	display: block;
-	height: 1px;
-	width: 100%;
-	background-position: 0 -408px;
-	background-repeat: repeat-x;
-}
+
 #searchform{
 	padding: 7px; 
 	position:relative;
@@ -115,16 +107,3 @@ span.error:before{
   border-color: transparent transparent #edbd00 transparent;
   }
   
-span.error:after{
-  content: "";
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-position: 0 -1581px;
-  background-repeat: no-repeat;
-	background-image: url("https://test.allianzebroker.co.uk/etc/designs/common_foundation/default-styles/assets/images/static/sprites/core-se37251be3a.png");
-  }
-
