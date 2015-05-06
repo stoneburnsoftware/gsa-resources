@@ -82,9 +82,9 @@
           overflow: hidden;
           width: 85%;
           font-weight:bold;
-          font-size:14px;
-      padding-left:5px;
-      color:#151515;
+          font-size:12px;
+		  padding-left:5px;
+		  color:#151515;
           }
           li.dn-attr-hdr div {
           width: 100%;
