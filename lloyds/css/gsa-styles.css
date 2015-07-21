@@ -17,3 +17,7 @@
 		margin-right: 0;
 	}
 	
+	/*hide mobile dynamic nav button*/
+	#dn_button{
+		display:none;
+	}
