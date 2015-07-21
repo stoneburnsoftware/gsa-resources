@@ -5,6 +5,6 @@
 	}
 	
 	
-	.cp-searchBox input[type=text]{
+	#inputfield{
 		width:50% !important;
 	}
