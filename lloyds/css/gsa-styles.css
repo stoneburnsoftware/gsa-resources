@@ -3,3 +3,8 @@
 		position: relative;
 		left: 13px;
 	}
+	
+	
+	.cp-searchBox input[type=text]{
+		width:50%;
+	}
