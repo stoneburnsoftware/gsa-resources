@@ -1,0 +1,53 @@
+/**
+  * Cascading Style Sheet for GSA Suggest.
+  */
+/* Classes for suggestion box */
+
+.ss-embed-mode {
+    margin-top: 27px !important;
+    right: -20px;
+    width: 365px;
+}
+.ss-gac-m {
+    background: white;
+    border: 1px solid black;
+    cursor: default;
+    font-size: 27px;
+    line-height: 17px;
+    margin: 0;
+    position: absolute;
+    z-index: 99;
+}
+.ss-gac-b {
+    background: #36c;
+    color: white;
+}
+.ss-gac-c {
+    overflow: hidden;
+    padding-left: 3px;
+    text-align: left;
+    white-space: nowrap;
+}
+.ss-gac-d {
+    color: rgb(0, 55, 129);
+    font-size: 10px;
+    overflow: hidden;
+    float: right;
+    padding: 0 3px;
+    text-align: right;
+    white-space: nowrap;
+}
+.ss-gac-b td {
+    color: white;
+}
+.ss-gac-e td {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0 3px 2px;
+    text-align: right;
+}
+.ss-gac-e span {
+    color: #00c;
+    cursor: pointer;
+    text-decoration: underline;
+}
