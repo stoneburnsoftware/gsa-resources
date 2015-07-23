@@ -29,3 +29,9 @@
 	.dyn-nav-wrapper, .main-search-wrapper, .right-hand-wrapper{
 		float:left;
 	}
+	
+	.mod-GASearch-showBy{
+		position:relative;
+	}
+	
+	
