@@ -23,5 +23,9 @@
 	}
 	
 	#main{
-width: 700px;
+		width: 700px;
+	}
+	
+	.dyn-nav-wrapper, .main-search-wrapper, .right-hand-wrapper{
+		float:left;
 	}
