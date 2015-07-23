@@ -46,4 +46,21 @@
 		margin:0;
 	}
 	
+	.cluster_link{
+		float:left;
+		width:200px;
+	}
+	
+	#clustering{
+		background-color: white;
+		border: 1px solid #cccccc;
+		border-radius: 4px;
+		font-size: 84%;
+		line-height: 140%;
+		padding: 7px;
+	}
+	
+	#cluster_status, #cluster_holder{
+		display:none;
+	}
 	
