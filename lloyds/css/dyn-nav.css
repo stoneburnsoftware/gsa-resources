@@ -2,7 +2,7 @@
           * CSS for dynamic navigation.
           */
 			#attr_2, #attr_3, #attr_4, #attr_2 .dn-attr-hdr, #attr_3 .dn-attr-hdr, #attr_4 .dn-attr-hdr{
-						display:block;
+						display:block !important;
 					}
 					
 
