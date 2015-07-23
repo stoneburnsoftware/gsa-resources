@@ -4,3 +4,16 @@
 			#attr_2, #attr_3, #attr_4, #attr_2 .dn-attr-hdr, #attr_3 .dn-attr-hdr, #attr_4 .dn-attr-hdr{
 						display:block;
 					}
+					
+			.dn-img {
+				border: 0 none;
+				width: 16px;
+				height: 16px;
+				background: url("http://www.lloyds.com/images/sprites.png") no-repeat -79px -54px;
+				opacity: 0.7;
+				filter: alpha(opacity = 70);
+				display: block;
+				float: right;
+			}
+			
+			
