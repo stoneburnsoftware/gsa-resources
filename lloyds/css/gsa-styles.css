@@ -6,7 +6,7 @@
 	
 	
 	#inputfield{
-		width:59% !important;
+		width:59%;
 	}
 	
 	#keymatch_holder, #filter_tabs{
@@ -35,7 +35,7 @@
 	}
 	
 	.mod-GASearch-showBy{
-		position:relative !important;
+		position:relative;
 	}
 	
 	#ldc-content .mod-GASearch .cp-searchBox {
