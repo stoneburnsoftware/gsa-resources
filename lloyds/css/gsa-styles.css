@@ -30,6 +30,10 @@
 		float:left;
 	}
 	
+	.main-search-wrapper{
+		width:540px;
+	}
+	
 	.mod-GASearch-showBy{
 		position:relative !important;
 	}
