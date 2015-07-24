@@ -58,9 +58,20 @@
 		font-size: 84%;
 		line-height: 140%;
 		padding: 7px;
+		float:left;
+		width:93%;
 	}
 	
 	#cluster_status, #cluster_holder{
 		display:none;
 	}
+	
+	.result-item{
+		border-bottom: solid 1px #ddd;
+	}
+	
+	#wrapper table{
+		border:none;
+	}
+	
 	
