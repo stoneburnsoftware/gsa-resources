@@ -87,6 +87,12 @@
 	}
 	
 	.nav-pages-now{
-		width:100%;
+    width: 100%;
+    background-color: #EFEFEF;
+    padding: 4px;
+	}
+	
+	.nav-paging-container{
+		margin:0px;
 	}
 	
