@@ -87,12 +87,21 @@
 	}
 	
 	.nav-pages-now{
-    width: 100%;
-    background-color: #EFEFEF;
-    padding: 4px;
+		width: 100% !important;
+		background-color: #CCCCCC;
+		padding: 4px;
 	}
 	
 	.nav-paging-container{
 		margin:0px;
+	}
+	
+	#filter_tabs a {
+		padding-left: 12px;
+		cursor:pointer;
+	}
+	
+	#filter_tabs filter_selected{
+		color:#2dc2e3;
 	}
 	
