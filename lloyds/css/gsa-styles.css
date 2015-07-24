@@ -78,7 +78,7 @@
 		padding:0px;
 	}
 	
-	.image-div, .result-div{
+	.image-div, .result-div, .mod-GASearch-results, div#search_info_holder,#keymatch_holder, #filter_tabs, #searchWrapper{
 		float:left;
 	}
 	
