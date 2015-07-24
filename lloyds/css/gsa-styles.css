@@ -90,10 +90,15 @@
 		width: 100% !important;
 		background-color: #CCCCCC;
 		padding: 4px;
+		text-align:right;
 	}
 	
 	.nav-paging-container{
 		margin:0px;
+	}
+	
+	.filters-title{
+		font-weight:bold;
 	}
 	
 	#filter_tabs a {
@@ -104,4 +109,5 @@
 	#filter_tabs filter_selected{
 		color:#2dc2e3;
 	}
+	
 	
