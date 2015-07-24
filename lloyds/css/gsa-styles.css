@@ -74,6 +74,10 @@
 		margin:0px;
 	}
 	
+	#wrapper td{
+		padding:0px;
+	}
+	
 	.image-div, .result-div{
 		float:left;
 	}
