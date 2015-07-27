@@ -25,7 +25,7 @@
 	}
 	
 	#main{
-		width: 700px;
+		width: 720px;
 	}
 	
 	.dyn-nav-wrapper, .main-search-wrapper, .right-hand-wrapper{
@@ -33,7 +33,14 @@
 	}
 	
 	.main-search-wrapper{
-		width:540px;
+		width:520px;
+		margin-left:20px;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		margin-left: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-right: 5px;
 	}
 	
 	.mod-GASearch-showBy{
