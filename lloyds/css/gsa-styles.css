@@ -63,13 +63,8 @@
 	}
 	
 	#keymatch_padded{
-		padding: 4px;
 		line-height: 16px;
 		background-color:#CCCCCC;
-	}
-	
-	#search_info_holder{
-		padding:4px;
 	}
 	
 	.result-item{
@@ -94,14 +89,12 @@
 	
 	.nav-pages-now{
 		width: 100% !important;
-		padding: 4px;
 		text-align:right;
 	}
 	
 	.nav-paging-container{
 		margin:0px;
 		background-color: #CCCCCC;
-		padding:4px;
 	}
 	
 	.filters-title{
@@ -127,9 +120,8 @@
 	
 	.synoymns-wrapper{
 		float:left;
-		width:100%
-		padding:4px;
-	}
+		width:100%;
+		}
 
 	.left{
 		float:left;
