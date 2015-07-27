@@ -56,7 +56,7 @@
 		float:left;
 	}
 	
-	#cluster_status{
+	#cluster_status, #cluster_holder{
 		display:none;
 	}
 	
