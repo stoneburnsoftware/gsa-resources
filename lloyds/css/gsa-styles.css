@@ -68,6 +68,9 @@
 		background-color:#CCCCCC;
 	}
 	
+	#search_info_holder{
+		padding:4px;
+	}
 	
 	.result-item{
 		border-bottom: solid 1px #ddd;
