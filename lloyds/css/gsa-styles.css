@@ -46,10 +46,10 @@
 		margin:0;
 	}
 	
-	.cluster_link{
+	.cluster_link, .cluster_comma{
 		float:left;
-		width:200px;
 	}
+	
 	
 	#clustering{
 		background-color: white;
@@ -113,9 +113,6 @@
 	#sort_by_holder{
 		float:right;
 	}
-	
-	.cluster_comma{
-		float:left;
-	}
+
 	
 	
