@@ -37,9 +37,9 @@
 		margin-left:20px;
 		border-left: 1px solid black;
 		border-right: 1px solid black;
-		margin-left: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
+		margin-left: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 		margin-right: 5px;
 	}
 	
@@ -48,7 +48,7 @@
 	}
 	
 	#ldc-content .mod-GASearch .cp-searchBox {
-		width: 100%;
+		width: 99%;
 	}
 	
 	.mod-GASearch-header{
@@ -153,4 +153,7 @@
 		float:left !important;
 	}
 	
+	#search_info_holder, .synoymns-wrapper, #clustering, #filter_tabs, #main_res{
+		padding:4px;
+	}
 	
