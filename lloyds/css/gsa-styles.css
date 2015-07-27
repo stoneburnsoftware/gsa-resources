@@ -50,16 +50,10 @@
 		float:left;
 	}
 	
-	
 	#clustering{
-		background-color: white;
-		border: 1px solid #cccccc;
-		border-radius: 4px;
-		font-size: 84%;
-		line-height: 140%;
-		padding: 7px;
+		border-bottom: 1px solid black;
+		padding-bottom: 5px;
 		float:left;
-		width:93%;
 	}
 	
 	#cluster_status{
@@ -112,6 +106,10 @@
 	
 	#sort_by_holder{
 		float:right;
+	}
+	
+	.mod-resultsWrapper{
+		border-top:none;
 	}
 
 	
