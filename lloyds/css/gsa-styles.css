@@ -158,3 +158,10 @@
 		padding:4px;
 	}
 	
+	.mod-GASearch-secondary{
+		position: relative;
+		right: 0px; 
+		width: 220px;
+		top: 0px; 
+		padding-left: 20px;
+	}
