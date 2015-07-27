@@ -62,7 +62,7 @@
 		display:none;
 	}
 	
-	.keymatch_padded{
+	#keymatch_padded{
 		padding: 4px;
 		line-height: 16px;
 		background-color:#CCCCCC;
