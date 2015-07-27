@@ -145,7 +145,7 @@
 	}
 	
 	.cp-searchBox{
-		float:left;
+		float:left !important;
 	}
 	
 	
