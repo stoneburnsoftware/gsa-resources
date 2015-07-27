@@ -115,12 +115,16 @@
 		cursor:pointer;
 	}
 	
-	#filter_tabs filter_selected{
+	#filter_tabs .filter_selected{
 		color:#2dc2e3;
 	}
 	
 	#sort_by_holder{
 		float:right;
+	}
+	
+	.sort_by_links a{
+		color:#2dc2e3;
 	}
 	
 	.mod-resultsWrapper{
