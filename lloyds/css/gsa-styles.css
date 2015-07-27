@@ -54,11 +54,20 @@
 		border-bottom: 1px solid black;
 		padding-bottom: 5px;
 		float:left;
+		width:100%;
 	}
+	
 	
 	#cluster_status, #cluster_holder{
 		display:none;
 	}
+	
+	.keymatch_padded{
+		padding: 4px;
+		line-height: 16px;
+		background-color:#CCCCCC;
+	}
+	
 	
 	.result-item{
 		border-bottom: solid 1px #ddd;
