@@ -94,13 +94,14 @@
 	
 	.nav-pages-now{
 		width: 100% !important;
-		background-color: #CCCCCC;
 		padding: 4px;
 		text-align:right;
 	}
 	
 	.nav-paging-container{
 		margin:0px;
+		background-color: #CCCCCC;
+		padding:4px;
 	}
 	
 	.filters-title{
