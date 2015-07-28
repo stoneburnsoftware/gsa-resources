@@ -89,6 +89,10 @@
 		word-break: break-all;
 	}
 	
+	.pdf-div.ico-pdf span{
+		margin-top:7px;
+	}
+	
 	.snippet-box{
 		border:none !important;
 	}
