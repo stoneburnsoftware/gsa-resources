@@ -1,7 +1,7 @@
     .site-selector{
 		height: 28px;
 		position: relative;
-		left: 13px;
+		left: 7px;
 	}
 	
 	
@@ -74,10 +74,22 @@
 	#keymatch_padded{
 		line-height: 16px;
 		background-color:#CCCCCC;
+		padding:4px;
 	}
 	
+	#keymatch_padded a{
+		color:black;
+	}
 	.result-item{
 		border-bottom: solid 1px #ddd;
+		line-height: 16px;
+		margin-top: 0px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	.snippet-box{
+		border:none !important;
 	}
 	
 	#wrapper table{
@@ -90,6 +102,10 @@
 	
 	.image-div, .result-div, .mod-GASearch-results, div#search_info_holder,#keymatch_holder, #filter_tabs, #searchWrapper{
 		float:left;
+	}
+	
+	.image-div{
+		padding-right:2%;
 	}
 	
 	.image-div img{
