@@ -191,6 +191,7 @@
 	
 	#ldc-content{
 		z-index:0;
+		overflow:visible;
 	}
 	
 	.nav-paging-list{
@@ -199,8 +200,4 @@
 	
 	#mobile_pagination{
 		float:right;
-	}
-	
-	#ldc-content{
-		overflow:visible;
 	}
