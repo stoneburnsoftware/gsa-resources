@@ -145,7 +145,8 @@
 	}
 	
 	.mod-resultsWrapper{
-		border:none;
+		border-top:none;
+		border-bottom:none;
 	}
 	
 	.synoymns-wrapper{
