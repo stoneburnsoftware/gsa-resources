@@ -100,7 +100,7 @@
 		padding:0px;
 	}
 	
-	.image-div,.pdf-div, .result-div, .mod-GASearch-results, div#search_info_holder,#keymatch_holder, #filter_tabs, #searchWrapper{
+	.image-div, .pdf-div, .result-div, .mod-GASearch-results, div#search_info_holder,#keymatch_holder, #filter_tabs, #searchWrapper{
 		float:left;
 	}
 	
