@@ -186,6 +186,7 @@
 		width: 220px;
 		top: 0px; 
 		padding-left: 20px;
+		z-index:0;
 	}
 	
 	.nav-paging-list{
