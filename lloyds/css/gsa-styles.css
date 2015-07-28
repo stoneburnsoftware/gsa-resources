@@ -200,3 +200,7 @@
 	#mobile_pagination{
 		float:right;
 	}
+	
+	#ldc-content{
+		overflow:visible;
+	}
