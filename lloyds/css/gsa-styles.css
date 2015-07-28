@@ -117,7 +117,7 @@
 		text-align:right;
 	}
 	
-	.nav-paging-container{
+	#search_info_holder{
 		margin:0px;
 		background-color: #CCCCCC;
 	}
@@ -185,4 +185,12 @@
 	
 	#bottom_navigation_holder{
 		background-color:none;
+	}
+	
+	.nav-paging-list{
+		float:left;
+	}
+	
+	#mobile_pagination{
+		float:right;
 	}
