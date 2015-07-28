@@ -189,6 +189,10 @@
 		z-index:0;
 	}
 	
+	#ldc-content{
+		z-index:0;
+	}
+	
 	.nav-paging-list{
 		float:left;
 	}
