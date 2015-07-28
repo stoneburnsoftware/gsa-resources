@@ -191,7 +191,7 @@
 	
 	#ldc-content{
 		z-index:0;
-		overflow:visible;
+		overflow:visible; 
 	}
 	
 	.nav-paging-list{
