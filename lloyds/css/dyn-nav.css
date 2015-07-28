@@ -5,12 +5,6 @@
 						display:block !important;
 					}
 					
-
-			.toggle-preview{
-				color: #0000cc !important;
-				background-image: url(preview_on.png);
-			}
-
 			div.floating-viewer
 				z-index:10;
 			}
