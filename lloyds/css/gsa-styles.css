@@ -1,5 +1,8 @@
     
-
+	@font-face {
+		font-family: 'SansaLloydsSemiBold'; 
+		src: url(https://storage.googleapis.com/paul_thomas/Sansa_Lloyds_SemiBold.ttf); 
+		}
 	
 	.site-selector{
 		height: 28px;
