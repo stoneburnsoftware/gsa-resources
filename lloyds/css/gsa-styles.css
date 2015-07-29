@@ -55,15 +55,21 @@
 		margin:0;
 	}
 	
-	.cluster-result{
-		float:left;
-	}
 	
-	#cs-clusters{
+	
+	#cs-clusters-wrapper{
 		border-bottom: 1px solid black;
 		padding-bottom: 5px;
 		float:left;
 		width:100%;
+	}
+	
+	.cluster-results{
+		display:none;
+	}
+	
+	.cluster-result{
+		float:left;
 	}
 	
 	
