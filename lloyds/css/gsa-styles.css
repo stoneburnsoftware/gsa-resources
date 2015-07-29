@@ -86,7 +86,7 @@
 	}
 	
 	.result-item table{
-		border:none;
+		border-bottom:none;
 	}
 	
 	.pdf-div.ico-pdf span{
