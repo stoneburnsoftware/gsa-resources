@@ -63,11 +63,7 @@
 		float:left;
 		width:100%;
 	}
-	
-	.cluster-results{
-		display:none;
-	}
-	
+
 	.cluster-result{
 		float:left;
 	}
