@@ -81,11 +81,7 @@
 		color:black;
 	}
 	.result-item{
-		border-bottom: solid 1px #ddd;
 		line-height: 16px;
-		margin-top: 0px;
-		padding-bottom: 10px;
-		padding-top: 10px;
 		word-break: break-all;
 	}
 	
@@ -205,3 +201,12 @@
 	.doc-type-text{
 		display:none;
 	}
+	
+	.single-result{
+		float:left;
+		border-bottom: solid 1px #ddd;
+		margin-top: 0px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
