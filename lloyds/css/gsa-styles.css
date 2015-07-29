@@ -55,21 +55,17 @@
 		margin:0;
 	}
 	
-	.cluster_link, .cluster_comma{
+	.cluster-result{
 		float:left;
 	}
 	
-	#clustering{
+	#cs-clusters{
 		border-bottom: 1px solid black;
 		padding-bottom: 5px;
 		float:left;
 		width:100%;
 	}
 	
-	
-	#cluster_status, #cluster_holder{
-		display:none;
-	}
 	
 	#keymatch_padded{
 		line-height: 16px;
@@ -176,7 +172,7 @@
 		float:left !important;
 	}
 	
-	#search_info_holder, .synoymns-wrapper, #clustering, #filter_tabs, #main_res{
+	#search_info_holder, .synoymns-wrapper, #cs-clusters, #filter_tabs, #main_res{
 		padding:4px;
 	}
 	
