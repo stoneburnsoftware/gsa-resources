@@ -201,3 +201,7 @@
 	#mobile_pagination{
 		float:right;
 	}
+	
+	.doc-type-text{
+		display:none;
+	}
