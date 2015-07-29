@@ -1,4 +1,13 @@
-    .site-selector{
+    
+	
+	@font-face {
+		font-family: 'SansaLloydsSemiBold'; 
+		src: url(../fonts/sansa_lloyds_semibold-webfont.ttf); 
+		font-weight: normal; 
+		font-style: normal;
+		}
+	
+	.site-selector{
 		height: 28px;
 		position: relative;
 		left: 7px;
