@@ -85,6 +85,10 @@
 		word-break: break-all;
 	}
 	
+	.result-item table{
+		border:none;
+	}
+	
 	.pdf-div.ico-pdf span{
 		margin-top:7px;
 	}
