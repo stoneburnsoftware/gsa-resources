@@ -84,7 +84,7 @@
 		padding:4px;
 	}
 	
-	#keymatch_padded a{
+	#keymatch_padded a, 	#keymatch_padded .a{
 		color:black;
 	}
 	.result-item{
