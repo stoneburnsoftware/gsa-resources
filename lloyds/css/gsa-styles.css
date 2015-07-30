@@ -62,7 +62,7 @@
 	}
 	
 	
-	
+	 
 	.cs-clusters-wrapper{
 		border-bottom: 1px solid black;
 		padding-bottom: 5px;
@@ -72,6 +72,7 @@
 
 	.cluster-result{
 		float:left;
+		padding-right: 2px;
 	}
 	
 	
@@ -220,5 +221,5 @@
 	
 	
 	#ldc-footer{
-		color:white;
+		color:white !important;
 	}
