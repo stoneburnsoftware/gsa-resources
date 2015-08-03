@@ -150,6 +150,7 @@
 	
 	#sort_by_holder{
 		float:right;
+		margin-top: 5px;
 	}
 	
 	.sort_by_links a{
