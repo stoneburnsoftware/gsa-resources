@@ -223,3 +223,7 @@
 	.footer-base{
 		color:white !important;
 	}
+	
+	#no_documents_matched{
+		display:none;
+	}
