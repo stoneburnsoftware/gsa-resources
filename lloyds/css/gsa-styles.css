@@ -237,7 +237,11 @@
 	}
 	
 	.clear-filters a{
-		color: #E6E6E6;
+		color: #CCCCCC;
 	}
 	
+	
+	#attr_1>li>a{
+		font-weight:normal;
+	}
 	
