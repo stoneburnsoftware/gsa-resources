@@ -31,9 +31,9 @@
     white-space: nowrap;
 }
 .ss-gac-d {
-    color: rgb(0, 55, 129);
+    color: #2dc2e3;
     font-size: 10px;
-    overflow: hidden;
+    overflow: visible;
     float: right;
     padding: 0 3px;
     text-align: right;
