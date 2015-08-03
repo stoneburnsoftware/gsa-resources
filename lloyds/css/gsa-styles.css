@@ -225,5 +225,5 @@
 	}
 	
 	#no_documents_matched{
-		display:none;
+		float:left;;
 	}
