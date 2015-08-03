@@ -227,3 +227,17 @@
 	#no_documents_matched{
 		float:left;
 	}
+	
+	
+	.clear-filters{
+	    position: absolute;
+		right: 0px;
+		font-size: 10px;
+		top: 5px;
+	}
+	
+	.clear-filters a{
+		color: #E6E6E6;
+	}
+	
+	
