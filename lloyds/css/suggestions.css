@@ -12,8 +12,8 @@
     background: white;
     border: 1px solid black;
     cursor: default;
-    font-size: 27px;
-    line-height: 17px;
+    font-size: 23px;
+    line-height: 9px;
     margin: 0;
     position: absolute;
     z-index: 99;
@@ -25,7 +25,7 @@
     color: white;
 }
 .ss-gac-c {
-    overflow: hidden;
+    overflow: visible;
     padding-left: 3px;
     text-align: left;
     white-space: nowrap;
