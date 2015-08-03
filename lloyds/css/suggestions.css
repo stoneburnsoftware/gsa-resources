@@ -18,7 +18,7 @@
     position: absolute;
     z-index: 99;
 	width: 454px !important;
-	top: 230px !important;
+	margin-top: 5px !important;
 }
 .ss-gac-b {
     background: #36c;
