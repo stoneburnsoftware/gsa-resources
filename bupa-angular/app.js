@@ -1,4 +1,4 @@
-angular.module('bupasearch', ['ngRoute', 'bupasearchservice'])
+angular.module('bupasearch', ['ngRoute', 'buparesults'])
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	.otherwise({
@@ -6,35 +6,25 @@ angular.module('bupasearch', ['ngRoute', 'bupasearchservice'])
 		controller: 'mainCtrl'
 	})
 
-	$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
+
 }])
 .controller("mainCtrl", ['$scope', '$location', 'Gsa',
 	function($scope, $location, Gsa) {
-	var collection = $location.search().site;
-    $scope.collection = collection;
-    $scope.resourceuri = bupaconst.resourceuri;
-    $scope.results = {};
-    $scope.cards = [
-    	{
+    $scope.currentCollection = $location.search().site;
+    $scope.cards = {
+    	bankofengland: {
     		title: 'Products',
     		collection: 'bankofengland'
     	},
-    	{
+    	lloyds: {
     		title: 'Health',
     		collection: 'lloyds'
     	}
-    ]
-
-    if(collection == 'all'){
-    	//search each collection
-	    for(var i in $scope.cards){
-	    	Gsa.search('bupa',$scope.cards[i].collection).then(function(data) {
-			    return $scope.results[$scope.cards[i].collection]= data;
-			});
-	    }
-    }else{
-    	Gsa.search('bupa',collection).then(function(data) {
-		    return $scope.results[collection] = data;
-		});
     }
+}])
+.filter('html', ['$sce', function($sce){
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
 }]);

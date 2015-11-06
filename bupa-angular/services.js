@@ -3,7 +3,7 @@ angular.module('bupasearchservice', [])
 	return {
 		search: function(q, site){
 			var deferred = $q.defer();
-			$http.get(bupaconst.gsauri + '/search?q='+q+'&site='+site+'&client=legalview&proxystylesheet=json')
+			$http.get(bupaconst.gsauri + '/search?q='+q+'&site='+site+'&client=legalview&proxystylesheet=json&getfields=*')
 			.then(successCallback, errorCallback);
 
 			function successCallback(response){
