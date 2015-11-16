@@ -1,5 +1,6 @@
 angular.module('bupasearch', ['ngRoute', 'buparesults'])
-.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+.config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', 
+    function($routeProvider, $locationProvider, $sceDelegateProvider) {
 	$routeProvider
 	.otherwise({
 		templateUrl: bupaconst.resourceuri +'mainTemplate.html',
@@ -8,6 +9,12 @@ angular.module('bupasearch', ['ngRoute', 'buparesults'])
 
     $locationProvider.html5Mode(true);
 
+    $sceDelegateProvider.resourceUrlWhitelist([
+        // Allow same origin resource loads.
+        'self',
+        // Allow loading from our assets domain.  Notice the difference between * and **.
+        bupaconst.resourceuri + '**'
+    ]);
 }])
 .controller("mainCtrl", ['$scope', '$location', 'Gsa',
 	function($scope, $location, Gsa) {
