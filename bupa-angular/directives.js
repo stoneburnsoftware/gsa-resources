@@ -5,7 +5,8 @@ angular.module('buparesults', ['bupasearchservice'])
     templateUrl: bupaconst.resourceuri + 'resultsTemplate.html',
     scope:{
     	collection: '@',
-        title: '@'
+        title: '@',
+        mode: '@'
     },
     link: function(scope, elem, attrs){
     	console.log('created results template directive for ', scope.collection);

@@ -1,17 +1,19 @@
 <div style="height:70px;"></div>
-	  	<div class="container">  	
-				  <div class="row">
-				    <div class="col s10 m10 l11">
-			          <div class="input-field">
-			            <input id="input_text large" type="text" ng-model="searchbox"/>
-			            <!--  <a class="waves-effect waves-teal btn-flat"><i class="material-icons">search</i></a> -->
-			            <label for="input_text">Search keywords</label>
-			          </div>
-		          	</div>
-				    <div class="col s2 m2 l1" style="padding-left:0px;">
-			          <i class="material-icons medium" style="margin-top:10px;">search</i>	
-			        </div>	
-			      </div>
+	  	<div class="container">  
+	  			<form ng-submit="search()">
+					  <div class="row">
+					    <div class="col s10 m10 l11">
+				          <div class="input-field">
+				            <input id="input_text large" type="text" ng-model="searchbox"/>
+				            <!--  <a class="waves-effect waves-teal btn-flat"><i class="material-icons">search</i></a> -->
+				            <label for="input_text">Search keywords</label>
+				          </div>
+			          	</div>
+					    <div class="col s2 m2 l1" style="padding-left:0px;">
+				          <i class="material-icons medium" style="margin-top:10px;">search</i>	
+				        </div>	
+				      </div>
+			      </form>	
 				  <div class="row" style="padding:0 10px 0 10px;">
 				    <div class="col s10 m10 l12">
 			          <div style="margin-top:0px;margin-bottom:-25px;">
@@ -30,9 +32,9 @@
 			      		<!--keymatches-->
 			      		<!--products and health information-->
 			      		<div class="row" style="margin-bottom:0px;">
-							<div resultscard collection="bankofengland" title="{{cards[bankofengland].title}}"></div>
+							<div resultscard collection="bankofengland" title="{{cards[bankofengland].title}}" mode="{{currentView}}"></div>
 					      	
-					      	<div resultscard collection="lloyds" title="{{cards[lloyds].title}}"></div>
+					      	<div resultscard collection="lloyds" title="{{cards[lloyds].title}}" mode="{{currentView}}"></div>
 					   	</div>	
 			      		<!--maps and claims-->
 			      		<!--general and related searches-->
@@ -40,7 +42,7 @@
 			      <!-- if collection is not ALL - show the fullscreen card-->
 			      <div ng-if="currentView == 'fullscreen'">
 			      	fullscreen
-			      		<div resultscard collection="{{params.site}}" title="{{cards[params.site].title}}"></div>
+			      		<div resultscard collection="{{params.site}}" title="{{cards[params.site].title}}" mode="{{currentView}}"></div>
 			      </div>
 				<div style="height:40px;"></div>
 				  <div class="row" style="padding:0 10px 0 10px;">

@@ -51,6 +51,11 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
         //build all href
         p.site = allCollection;
         $scope.allHref = '/search?' + jQuery.param(p);
+        
+        ///////////functions/////////////
+        $scope.search = function(){
+        	console.log('searching for ', $scope.searchbox);
+        }
     }
 ])
 .filter('html', ['$sce', function($sce){
