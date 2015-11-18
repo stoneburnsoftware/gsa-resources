@@ -1,6 +1,6 @@
 						<div class="col s12 m12 l6" style="padding-top:10px;">
 					        <div class="" style="padding:10px;">
-								<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="title"></div>
+								<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="config.label"></div>
 								<div ng-if="!results.GSP.RES">
 									Sorry, no results were found for this search. Please try another term.
 								</div>
@@ -35,9 +35,8 @@
 					            	
 						              
 					            <div ng-if="mode == 'cards'" class="">
-					              <a href="/products5.html" style="color:orange;">View more ...</a>
+					              <a href="{{config.href}}" style="color:orange;">View more ...</a>
 					            </div>
-								[{{mode}}]
 					            <div ng-if="mode == 'fullscreen'">
 						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #efefef;"></div>
 						            <div class="grey-text">

@@ -5,12 +5,13 @@ angular.module('buparesults', ['bupasearchservice'])
     templateUrl: bupaconst.resourceuri + 'resultsTemplate.html',
     scope:{
     	collection: '@',
-        title: '@',
-        mode: '@'
+        config: '=',
+        mode: '@',
+        query:'@',
+        numResults:'@'
     },
     link: function(scope, elem, attrs){
-    	console.log('created results template directive for ', scope.collection);
-    	Gsa.search('bupa',scope.collection).then(function(data) {
+    	Gsa.search(scope.query,scope.collection,scope.numResults).then(function(data) {
 		    return scope.results = data;
 		});
     }
