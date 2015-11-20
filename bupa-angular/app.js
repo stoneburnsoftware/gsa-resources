@@ -20,7 +20,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
 	function($scope, $location, Gsa) {
         //$scope.params = $location.search();
         $scope.params = parseLocation(window.location.search);
-
+        $scope.params.q = $scope.params.q.replace(/\+/g, " ");
         $scope.searchbox = $scope.params.q;
         
         if(
@@ -86,8 +86,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
         	//$location.search('q',$scope.searchbox);
             console.log(window.location.href);
             window.location.href = updateQueryStringParameter(
-                updateQueryStringParameter(window.location.href, 'page', 1), 'q', $scope.searchbox);
-            console.log(window.location.href);
+                updateQueryStringParameter(window.location.href, 'page', 1), 'q', encodeURIComponent($scope.searchbox));
         }
 
         $scope.hasResults = function(){

@@ -12,7 +12,8 @@ angular.module('bupasearchservice', [])
 			var start = (pageNo - 1) * numResults;
 
 			var deferred = $q.defer();
-			$http.get(bupaconst.gsauri + '/search?q='+q+'&site='+site+'&num='+numResults+'&start='+start+'&client=legalview&proxystylesheet=json&getfields=*&filter=0')
+			var url = bupaconst.gsauri + '/search?q='+encodeURIComponent(q)+'&site='+site+'&num='+numResults+'&start='+start+'&client=legalview&proxystylesheet=json&getfields=*&filter=0';
+			$http.get(url)
 			.then(successCallback, errorCallback);
 
 			function successCallback(response){
