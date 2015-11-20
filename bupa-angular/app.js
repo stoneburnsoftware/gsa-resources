@@ -7,7 +7,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
 		controller: 'mainCtrl'
 	})
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
 
     $sceDelegateProvider.resourceUrlWhitelist([
         // Allow same origin resource loads.
@@ -18,7 +18,8 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
 }])
 .controller("mainCtrl", ['$scope', '$location', 'Gsa',
 	function($scope, $location, Gsa) {
-        $scope.params = $location.search();
+        //$scope.params = $location.search();
+        $scope.params = parseLocation(window.location.search);
 
         $scope.searchbox = $scope.params.q;
         
@@ -68,7 +69,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
         };
           
         //build hrefs for cards
-        var p = jQuery.extend({}, $location.search());
+        var p = jQuery.extend({}, $scope.params);
         for(var i in $scope.cards){
             var collection = $scope.cards[i].collection
             p.site = collection;
@@ -81,7 +82,10 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
         
         ///////////functions/////////////
         $scope.search = function(){
-        	$location.search('q',$scope.searchbox);
+        	//$location.search('q',$scope.searchbox);
+            console.log(window.location.href);
+            window.location.href = updateQueryStringParameter(window.location.href, 'q', $scope.searchbox);
+            console.log(window.location.href);
         }
     }
 ])
@@ -90,3 +94,31 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
         return $sce.trustAsHtml(text);
     };
 }]);
+//workaround for html5mode = false
+var parseLocation = function(location) {
+    var pairs = location.substring(1).split("&");
+    var obj = {};
+    var pair;
+    var i;
+
+    for ( i in pairs ) {
+      if ( pairs[i] === "" ) continue;
+
+      pair = pairs[i].split("=");
+      obj[ decodeURIComponent( pair[0] ) ] = decodeURIComponent( pair[1] );
+    }
+
+    return obj;
+};
+function updateQueryStringParameter(uri, key, value) {
+  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+    console.log('if ', uri.replace(re, '$1' + key + "=" + value + '$2'));
+    return uri.replace(re, '$1' + key + "=" + value + '$2');
+  }
+  else {
+    console.log('else ', uri + separator + key + "=" + value);
+    return uri + separator + key + "=" + value;
+  }
+}
