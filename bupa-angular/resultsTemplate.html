@@ -1,4 +1,4 @@
-						<div class="col s12 m12 l6" style="padding-top:10px;">
+						<div ng-if="config.loaded && config.hasResults" class="col s12 m12 l6" style="padding-top:10px;">
 					        <div class="" style="padding:10px;">
 								<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="config.label"></div>
 								<div ng-if="!results.GSP.RES">
@@ -8,7 +8,7 @@
 						              	<div>
 						              		<a href="#" ng-bind-html="R.T | html"></a>
 						              	</div>
-						              	<div ng-bind-html="R.S | html"></div>
+						              	<div ng-bind-html="R.S | snippet | html"></div>
 						              	<div ng-if="$first">
 							              	<ul ng-if="R.MT.gsaentity_Country">
 								              	<li ng-if="R.MT.gsaentity_Country">

@@ -12,6 +12,12 @@ angular.module('buparesults', ['bupasearchservice'])
     },
     link: function(scope, elem, attrs){
     	Gsa.search(scope.query,scope.collection,scope.numResults).then(function(data) {
+            if(data.GSP.RES){
+                scope.config.hasResults = true;
+            }else{
+                scope.config.hasResults = false;
+            }
+            scope.config.loaded = true;
 		    return scope.results = data;
 		});
     }

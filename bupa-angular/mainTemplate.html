@@ -40,60 +40,79 @@
 			      </div>
 
 			      <!-- if collection is ALL - show keymatches, cards and related searches-->
-			      <div ng-if="currentView == 'cards'">
-			      		<!--keymatches-->
-			      		<div style="height:40px;"></div>
-						  <div class="row" style="padding:0 10px 0 10px;">
-						    <div class="col s10 m10 l12">
-				              <div style="margin-bottom:0px;padding-bottom:0px;border-bottom:0px solid #efefef;">
-				              	<div><a href="#">Our Products | Bupa Travel Insurance</a></div>
-				              	<div>This product is available for UK residents (excluding the Channel Islands) only. ... Our products. Travel insurance quote.</div>
-				              </div>
-							</div>
-					      </div>
-			      		<!--products and health information-->
-			      		<div class="row" style="margin-bottom:0px;">
-							<div resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" query="{{params.q}}" num-results="4"></div>
-					      	
-					      	<div resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" query="{{params.q}}" num-results="4"></div>
-					   	</div>	
-			      		<!--maps and claims-->
-			      		<div class="row" style="margin-bottom:0px;">
-							<div resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" query="{{params.q}}" num-results="3"></div>
-					      	
-					      	<div resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" query="{{params.q}}" num-results="5"></div>
-					   	</div>	
-					   	<div class="row" style="margin-bottom:0px;">
-							<div resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" query="{{params.q}}" num-results="3"></div>
-					      	
-							<div class="col s12 m12 l6" style="padding-top:20px;">
-					          <div class="" style="padding:10px;">
-					            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;">Related Searches</div>					            
-								<ul>
-								<li><a href="#">operation carried</a></li>
-								<li><a href="#">asleep operation</a></li>
-								<li><a href="#">achemotherapy surgical operations covered</a></li>
-								<li><a href="#">major operation</a></li>
-								<li><a href="#">operation remove</a></li>
-								<li><a href="#">hernia repair</a></li>
-								<li><a href="#">chemotherapy surgical operation need</a></li>
-								<li><a href="#">hiatus hernia</a></li>
-								<li><a href="#">need operation</a></li>
-								<li><a href="#">operation repair</a></li>
+			      
+				      <div ng-if="currentView == 'cards'">
+				      		<!--keymatches-->
+				      		<div style="height:40px;"></div>
+							  <div class="row" style="padding:0 10px 0 10px;">
+							    <div class="col s10 m10 l12">
+					              <div style="margin-bottom:0px;padding-bottom:0px;border-bottom:0px solid #efefef;">
+					              	<div><a href="#">Our Products | Bupa Travel Insurance</a></div>
+					              	<div>This product is available for UK residents (excluding the Channel Islands) only. ... Our products. Travel insurance quote.</div>
+					              </div>
+								</div>
+						      </div>
+				      		<!--products and health information-->
+				      		<div class="row" style="margin-bottom:0px;">
+								<div resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" query="{{params.q}}" num-results="4"></div>
+						      	
+						      	<div resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" query="{{params.q}}" num-results="4"></div>
+						   	</div>	
+				      		<!--maps and claims-->
+				      		<div class="row" style="margin-bottom:0px;">
+								<div resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" query="{{params.q}}" num-results="3"></div>
+						      	
+						      	<div resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" query="{{params.q}}" num-results="5"></div>
+						   	</div>	
+						   	<div class="row" style="margin-bottom:0px;">
+								<div resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" query="{{params.q}}" num-results="3"></div>
+						      	
+								<div class="col s12 m12 l6" style="padding-top:20px;">
+						          <div class="" style="padding:10px;">
+						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;">Related Searches</div>					            
+									<ul>
+									<li><a href="#">operation carried</a></li>
+									<li><a href="#">asleep operation</a></li>
+									<li><a href="#">achemotherapy surgical operations covered</a></li>
+									<li><a href="#">major operation</a></li>
+									<li><a href="#">operation remove</a></li>
+									<li><a href="#">hernia repair</a></li>
+									<li><a href="#">chemotherapy surgical operation need</a></li>
+									<li><a href="#">hiatus hernia</a></li>
+									<li><a href="#">need operation</a></li>
+									<li><a href="#">operation repair</a></li>
+									</ul>
+						     	</div>					     	
+						     	
+						       </div>
+						   	</div>	
+				      		<!--general and related searches-->
+				      </div>
+				      <!-- if collection is not ALL - show the fullscreen card-->
+				      <div ng-if="currentView == 'fullscreen'">
+				      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" query="{{params.q}}" num-results="10"></div>
+				      </div>
+				      <div ng-if="allLoaded()">
+						<div ng-if="!hasResults()">
+							<div>
+								<div>Your search <strong ng-bind="'\'' + params.q + '\''"></strong> did not return any results.</div>
+
+								<br>
+								<div>Suggestions:</div>
+							   	  
+								<ul class="suggestions_ul">
+									<li>Make sure all words are spelled correctly.</li>
+									<li>Try different keywords.</li>
+									<li>Try more general keywords.</li>
+									<li>Try fewer keywords.</li>
 								</ul>
-					     	</div>					     	
-					     	
-					       </div>
-					   	</div>	
-			      		<!--general and related searches-->
-			      </div>
-			      <!-- if collection is not ALL - show the fullscreen card-->
-			      <div ng-if="currentView == 'fullscreen'">
-			      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" query="{{params.q}}" num-results="10"></div>
-			      </div>
-				   	
+							</div>
+						</div>	
+				      </div>
+				      <div>
+			   	</div>
 		
-			    </div>
+	    </div>
  
   	<div style="background: #0079c8;height:300px;margin-top:40px;">
  	</div>

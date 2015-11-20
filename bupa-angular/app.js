@@ -1,4 +1,4 @@
-angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
+angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupafilters'])
 .config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', 
     function($routeProvider, $locationProvider, $sceDelegateProvider) {
 	$routeProvider
@@ -86,6 +86,29 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize'])
             console.log(window.location.href);
             window.location.href = updateQueryStringParameter(window.location.href, 'q', $scope.searchbox);
             console.log(window.location.href);
+        }
+
+        $scope.hasResults = function(){
+            for(var i in $scope.cards){
+                if($scope.cards[i].hasResults){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        $scope.allLoaded = function(){
+            if($scope.currentView == 'cards'){
+                for(var i in $scope.cards){
+                    if(!$scope.cards[i].loaded){
+                        return false;
+                    }
+                }
+                return true;
+            }else{
+                return $scope.cards[$scope.params.site].loaded;
+            }
+            
         }
     }
 ])
