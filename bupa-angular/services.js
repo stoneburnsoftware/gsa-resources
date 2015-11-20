@@ -1,9 +1,18 @@
 angular.module('bupasearchservice', [])
 .service('Gsa', ['$http', '$q', function($http, $q){
 	return {
-		search: function(q, site, numResults){
+		search: function(q, site, numResults, pageNo){
+			pageNo = parseInt(pageNo);
+			numResults = parseInt(numResults);
+
+			if(pageNo === null || pageNo < 1){
+				pageNo = 1;
+			}
+			//decrement because we work on a 0 index start
+			var start = (pageNo - 1) * numResults;
+
 			var deferred = $q.defer();
-			$http.get(bupaconst.gsauri + '/search?q='+q+'&site='+site+'&client=legalview&proxystylesheet=json&getfields=*&num='+numResults)
+			$http.get(bupaconst.gsauri + '/search?q='+q+'&site='+site+'&num='+numResults+'&start='+start+'&client=legalview&proxystylesheet=json&getfields=*&filter=0')
 			.then(successCallback, errorCallback);
 
 			function successCallback(response){

@@ -38,9 +38,26 @@
 		          		</div>	
 		          	</div>
 			      </div>
+			      	<!--no results-->
+				      <div ng-if="allLoaded()">
+						<div ng-if="!hasResults()">
+							<div>
+								<div>Your search <b ng-bind="'\'' + params.q + '\''"></b> did not return any results.</div>
 
+								<br>
+								<div>Suggestions:</div>
+							   	  
+								<ul class="suggestions_ul">
+									<li>Make sure all words are spelled correctly.</li>
+									<li>Try different keywords.</li>
+									<li>Try more general keywords.</li>
+									<li>Try fewer keywords.</li>
+								</ul>
+							</div>
+						</div>	
+				      </div>
+				      <div>
 			      <!-- if collection is ALL - show keymatches, cards and related searches-->
-			      
 				      <div ng-if="currentView == 'cards'">
 				      		<!--keymatches-->
 				      		<div style="height:40px;"></div>
@@ -54,18 +71,18 @@
 						      </div>
 				      		<!--products and health information-->
 				      		<div class="row" style="margin-bottom:0px;">
-								<div resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" query="{{params.q}}" num-results="4"></div>
+								<div resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></div>
 						      	
-						      	<div resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" query="{{params.q}}" num-results="4"></div>
+						      	<div resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></div>
 						   	</div>	
 				      		<!--maps and claims-->
 				      		<div class="row" style="margin-bottom:0px;">
-								<div resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" query="{{params.q}}" num-results="3"></div>
+								<div resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" params="params" num-results="3"></div>
 						      	
-						      	<div resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" query="{{params.q}}" num-results="5"></div>
+						      	<div resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" params="params" num-results="5"></div>
 						   	</div>	
 						   	<div class="row" style="margin-bottom:0px;">
-								<div resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" query="{{params.q}}" num-results="3"></div>
+								<div resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="3"></div>
 						      	
 								<div class="col s12 m12 l6" style="padding-top:20px;">
 						          <div class="" style="padding:10px;">
@@ -90,26 +107,8 @@
 				      </div>
 				      <!-- if collection is not ALL - show the fullscreen card-->
 				      <div ng-if="currentView == 'fullscreen'">
-				      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" query="{{params.q}}" num-results="10"></div>
+				      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="10"></div>
 				      </div>
-				      <div ng-if="allLoaded()">
-						<div ng-if="!hasResults()">
-							<div>
-								<div>Your search <strong ng-bind="'\'' + params.q + '\''"></strong> did not return any results.</div>
-
-								<br>
-								<div>Suggestions:</div>
-							   	  
-								<ul class="suggestions_ul">
-									<li>Make sure all words are spelled correctly.</li>
-									<li>Try different keywords.</li>
-									<li>Try more general keywords.</li>
-									<li>Try fewer keywords.</li>
-								</ul>
-							</div>
-						</div>	
-				      </div>
-				      <div>
 			   	</div>
 		
 	    </div>

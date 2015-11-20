@@ -40,13 +40,25 @@
 					            <div ng-if="mode == 'fullscreen'">
 						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #efefef;"></div>
 						            <div class="grey-text">
-						            		Prev&nbsp;&nbsp;&nbsp;&nbsp;
-						            		<a href="#">1</a>&nbsp;&nbsp;&nbsp;&nbsp;
-						            		<a href="#">2</a>&nbsp;&nbsp;&nbsp;&nbsp;
-						            		<a href="#">3</a>&nbsp;&nbsp;&nbsp;&nbsp;
-						            		<a href="#">4</a>&nbsp;&nbsp;&nbsp;&nbsp;
-						            		<a href="#">5</a>&nbsp;&nbsp;&nbsp;&nbsp;
-						            		<a href="#">Next</a>					              
+						            	<span ng-if="prevPage.enabled">
+						            		<a href="{{prevPage.href}}">Prev</a>
+						            	</span>
+						            	<span ng-if="!prevPage.enabled">
+						            		Prev
+						            	</span>&nbsp;&nbsp;&nbsp;&nbsp;
+						            	<span ng-repeat="p in pages">
+						            		<span ng-if="!p.selected">
+						            			<a href="{{p.href}}" ng-bind="p.num"></a>
+							            	</span>
+							            	<span ng-if="p.selected" ng-bind="p.num"></span>	
+						            		&nbsp;&nbsp;&nbsp;&nbsp;
+						            	</span>
+						            	<span ng-if="nextPage.enabled">
+						            		<a href="{{nextPage.href}}">Next</a>
+						            	</span>
+						            	<span ng-if="!nextPage.enabled">
+						            		Next
+						            	</span>				              
 						            </div>
 					            </div>
 					        </div>

@@ -70,6 +70,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
           
         //build hrefs for cards
         var p = jQuery.extend({}, $scope.params);
+        p.page = 1;
         for(var i in $scope.cards){
             var collection = $scope.cards[i].collection
             p.site = collection;
@@ -84,7 +85,8 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
         $scope.search = function(){
         	//$location.search('q',$scope.searchbox);
             console.log(window.location.href);
-            window.location.href = updateQueryStringParameter(window.location.href, 'q', $scope.searchbox);
+            window.location.href = updateQueryStringParameter(
+                updateQueryStringParameter(window.location.href, 'page', 1), 'q', $scope.searchbox);
             console.log(window.location.href);
         }
 
