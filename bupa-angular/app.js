@@ -16,12 +16,13 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
         bupaconst.resourceuri + '**'
     ]);
 }])
-.controller("mainCtrl", ['$scope', '$location', 'Gsa',
-	function($scope, $location, Gsa) {
+.controller("mainCtrl", ['$scope', '$location', 'Gsa', '$http',
+	function($scope, $location, Gsa, $http) {
         //$scope.params = $location.search();
         $scope.params = parseLocation(window.location.search);
-        $scope.params.q = $scope.params.q.replace(/\+/g, " ");
+        $scope.params.q = ($scope.params.q || '').replace(/\+/g, " ");
         $scope.searchbox = $scope.params.q;
+        $scope.buckets = Gsa.buckets;
         
         if(
         		$scope.params.site != bupaconst.coll_products_name &&
@@ -80,18 +81,32 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
         //build all href
         p.site = 'all';
         $scope.allHref = $location.path() +'?' + jQuery.param(p);
+
+        //load clusters
+        var clusterUri = bupaconst.gsauri + '/cluster?q='+encodeURIComponent($scope.params.q)+'&site=default_collection&client=bupa&proxystylesheet=json&filter=0';
+        $http.post(clusterUri).
+        success(function(data, status, headers, config) {
+            // this callback will be called asynchronously
+            // when the response is available
+
+            $scope.clusters=data;
+        })
         
         ///////////functions/////////////
         $scope.search = function(){
         	//$location.search('q',$scope.searchbox);
-            console.log(window.location.href);
             window.location.href = updateQueryStringParameter(
                 updateQueryStringParameter(window.location.href, 'page', 1), 'q', encodeURIComponent($scope.searchbox));
         }
 
+        $scope.search = function(q){
+            window.location.href = updateQueryStringParameter(
+                updateQueryStringParameter(window.location.href, 'page', 1), 'q', encodeURIComponent(q));
+        }
+
         $scope.hasResults = function(){
-            for(var i in $scope.cards){
-                if($scope.cards[i].hasResults){
+            for(var i in Gsa.buckets){
+                if(Gsa.buckets[i].hasResults){
                     return true;
                 }
             }
@@ -100,14 +115,14 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
 
         $scope.allLoaded = function(){
             if($scope.currentView == 'cards'){
-                for(var i in $scope.cards){
-                    if(!$scope.cards[i].loaded){
+                for(var i in Gsa.buckets){
+                    if(!Gsa.buckets[i].loaded){
                         return false;
                     }
                 }
                 return true;
             }else{
-                return $scope.cards[$scope.params.site].loaded;
+                return Gsa.buckets[$scope.params.site].loaded;
             }
             
         }

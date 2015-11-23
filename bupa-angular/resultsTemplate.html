@@ -1,10 +1,7 @@
-						<div ng-if="config.loaded && config.hasResults" class="col s12 m12 l6" style="padding-top:10px;">
+						<div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="col s12 m12 l6" style="padding-top:10px;">
 					        <div class="" style="padding:10px;">
 								<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="config.label"></div>
-								<div ng-if="!results.GSP.RES">
-									Sorry, no results were found for this search. Please try another term.
-								</div>
-						        <div ng-repeat="R in results.GSP.RES.R" style="margin-bottom:10px;padding-bottom:10px;border-bottom:0px solid #efefef;">
+						        <div ng-repeat="R in buckets[collection].GSP.RES.R" style="margin-bottom:10px;padding-bottom:10px;border-bottom:0px solid #efefef;">
 						              	<div>
 						              		<a href="#" ng-bind-html="R.T | html"></a>
 						              	</div>
@@ -40,23 +37,23 @@
 					            <div ng-if="mode == 'fullscreen'">
 						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #efefef;"></div>
 						            <div class="grey-text">
-						            	<span ng-if="prevPage.enabled">
-						            		<a href="{{prevPage.href}}">Prev</a>
+						            	<span ng-if="buckets[collection].prevPage.enabled">
+						            		<a href="{{buckets[collection].prevPage.href}}">Prev</a>
 						            	</span>
-						            	<span ng-if="!prevPage.enabled">
+						            	<span ng-if="!buckets[collection].prevPage.enabled">
 						            		Prev
 						            	</span>&nbsp;&nbsp;&nbsp;&nbsp;
-						            	<span ng-repeat="p in pages">
+						            	<span ng-repeat="p in buckets[collection].pages">
 						            		<span ng-if="!p.selected">
 						            			<a href="{{p.href}}" ng-bind="p.num"></a>
 							            	</span>
 							            	<span ng-if="p.selected" ng-bind="p.num"></span>	
 						            		&nbsp;&nbsp;&nbsp;&nbsp;
 						            	</span>
-						            	<span ng-if="nextPage.enabled">
-						            		<a href="{{nextPage.href}}">Next</a>
+						            	<span ng-if="buckets[collection].nextPage.enabled">
+						            		<a href="{{buckets[collection].nextPage.href}}">Next</a>
 						            	</span>
-						            	<span ng-if="!nextPage.enabled">
+						            	<span ng-if="!buckets[collection].nextPage.enabled">
 						            		Next
 						            	</span>				              
 						            </div>
