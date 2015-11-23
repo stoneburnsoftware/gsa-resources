@@ -81,20 +81,21 @@
 						      	
 						      	<div resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" params="params" num-results="5"></div>
 						   	</div>	
+						   	<!--general and related searches-->
 						   	<div class="row" style="margin-bottom:0px;">
 								<div resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="3"></div>
 						      	
-								<div class="col s12 m12 l6" style="padding-top:20px;">
+								<div ng-if="clusters.clusters[0].clusters" class="col s12 m12 l6" style="padding-top:20px;">
 						          <div class="" style="padding:10px;">
 						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;">Related Searches</div>	
 						            <div ng-repeat="cluster in clusters.clusters[0].clusters" class="cluster-result" > 
-						            	<a href="#" ng-bind="cluster.label" ng-click="search(cluster.label)"></a>
+						            	<a href="#" ng-bind="cluster.label" ng-click="searchFor(cluster.label)"></a>
       								</div>
 						     	</div>					     	
 						     	
 						       </div>
 						   	</div>	
-				      		<!--general and related searches-->
+				      		
 				      </div>
 				      <!-- if collection is not ALL - show the fullscreen card-->
 				      <div ng-if="currentView == 'fullscreen'">

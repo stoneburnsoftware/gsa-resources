@@ -99,7 +99,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
                 updateQueryStringParameter(window.location.href, 'page', 1), 'q', encodeURIComponent($scope.searchbox));
         }
 
-        $scope.search = function(q){
+        $scope.searchFor = function(q){
             window.location.href = updateQueryStringParameter(
                 updateQueryStringParameter(window.location.href, 'page', 1), 'q', encodeURIComponent(q));
         }
@@ -115,6 +115,10 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
 
         $scope.allLoaded = function(){
             if($scope.currentView == 'cards'){
+                if(!Gsa.buckets[bupaconst.coll_products_name]){
+                    //elements have not been initialised
+                    return false;
+                }
                 for(var i in Gsa.buckets){
                     if(!Gsa.buckets[i].loaded){
                         return false;
