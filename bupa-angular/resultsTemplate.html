@@ -1,62 +1,62 @@
-						<div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="col s12 m12 l6" style="padding-top:10px;">
-					        <div class="" style="padding:10px;">
-								<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="config.label"></div>
-						        <div ng-repeat="R in buckets[collection].GSP.RES.R" style="margin-bottom:10px;padding-bottom:10px;border-bottom:0px solid #efefef;">
-						              	<div>
-						              		<a href="#" ng-bind-html="R.T | html"></a>
-						              	</div>
-						              	<div ng-bind-html="R.S | snippet | html"></div>
-						              	<div ng-if="$first">
-							              	<ul ng-if="R.MT.gsaentity_Country">
-								              	<li ng-if="R.MT.gsaentity_Country">
-								              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsaentity_Country"></span>
-								              	</li>
-								              	<li>
-								              	<li ng-if="R.MT.gsaentity_City">
-								              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsaentity_City"></span>
-								              	</li>
-								              	<li ng-if="R.MT.gsaentity_content_type">
-								              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsaentity_content_type"></span>
-								              	</li>
-							              	</ul>
+<div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="result-card s12 m12 l6" >
+    <div class="" style="padding:10px;">
+		<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="config.label"></div>
+        <div ng-repeat="R in buckets[collection].GSP.RES.R" style="margin-bottom:10px;padding-bottom:10px;border-bottom:0px solid #efefef;">
+              	<div>
+              		<a href="#" ng-bind-html="R.T | html"></a>
+              	</div>
+              	<div ng-bind-html="R.S | snippet | html"></div>
+              	<div ng-if="$first">
+	              	<ul ng-if="R.MT.gsaentity_Country">
+		              	<li ng-if="R.MT.gsaentity_Country">
+		              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsaentity_Country"></span>
+		              	</li>
+		              	<li>
+		              	<li ng-if="R.MT.gsaentity_City">
+		              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsaentity_City"></span>
+		              	</li>
+		              	<li ng-if="R.MT.gsaentity_content_type">
+		              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsaentity_content_type"></span>
+		              	</li>
+	              	</ul>
 
-							              	<ul ng-if="R.MT.gsaentity_Country">
-								              	<li>
-								              		<i class="fa fa-file-text fa-lg black-text" ></i><a href="#" ng-bind="' ' + R.MT.gsaentity_Country"></a>
-								              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-								              		<i class="fa fa-phone fa-lg black-text" ></i> <a href="#" ng-bind="' ' + R.MT.gsaentity_Country"></a>
-								              	</li>
-							              	</ul>
-							            </div>
-						        </div>
-					            	
-						              
-					            <div ng-if="mode == 'cards'" class="">
-					              <a href="{{config.href}}" style="color:orange;">View more ...</a>
-					            </div>
-					            <div ng-if="mode == 'fullscreen'">
-						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #efefef;"></div>
-						            <div class="grey-text">
-						            	<span ng-if="buckets[collection].prevPage.enabled">
-						            		<a href="{{buckets[collection].prevPage.href}}">Prev</a>
-						            	</span>
-						            	<span ng-if="!buckets[collection].prevPage.enabled">
-						            		Prev
-						            	</span>&nbsp;&nbsp;&nbsp;&nbsp;
-						            	<span ng-repeat="p in buckets[collection].pages">
-						            		<span ng-if="!p.selected">
-						            			<a href="{{p.href}}" ng-bind="p.num"></a>
-							            	</span>
-							            	<span ng-if="p.selected" ng-bind="p.num"></span>	
-						            		&nbsp;&nbsp;&nbsp;&nbsp;
-						            	</span>
-						            	<span ng-if="buckets[collection].nextPage.enabled">
-						            		<a href="{{buckets[collection].nextPage.href}}">Next</a>
-						            	</span>
-						            	<span ng-if="!buckets[collection].nextPage.enabled">
-						            		Next
-						            	</span>				              
-						            </div>
-					            </div>
-					        </div>
-				        </div>
+	              	<ul ng-if="R.MT.gsaentity_Country">
+		              	<li>
+		              		<i class="fa fa-file-text fa-lg black-text" ></i><a href="#" ng-bind="' ' + R.MT.gsaentity_Country"></a>
+		              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+		              		<i class="fa fa-phone fa-lg black-text" ></i> <a href="#" ng-bind="' ' + R.MT.gsaentity_Country"></a>
+		              	</li>
+	              	</ul>
+	            </div>
+        </div>
+        	
+              
+        <div ng-if="mode == 'cards'" class="">
+          <a href="{{config.href}}" style="color:orange;">View more ...</a>
+        </div>
+        <div ng-if="mode == 'fullscreen'">
+            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #efefef;"></div>
+            <div class="grey-text">
+            	<span ng-if="buckets[collection].prevPage.enabled">
+            		<a href="{{buckets[collection].prevPage.href}}">Prev</a>
+            	</span>
+            	<span ng-if="!buckets[collection].prevPage.enabled">
+            		Prev
+            	</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            	<span ng-repeat="p in buckets[collection].pages">
+            		<span ng-if="!p.selected">
+            			<a href="{{p.href}}" ng-bind="p.num"></a>
+	            	</span>
+	            	<span ng-if="p.selected" ng-bind="p.num"></span>	
+            		&nbsp;&nbsp;&nbsp;&nbsp;
+            	</span>
+            	<span ng-if="buckets[collection].nextPage.enabled">
+            		<a href="{{buckets[collection].nextPage.href}}">Next</a>
+            	</span>
+            	<span ng-if="!buckets[collection].nextPage.enabled">
+            		Next
+            	</span>				              
+            </div>
+        </div>
+    </div>
+</div>

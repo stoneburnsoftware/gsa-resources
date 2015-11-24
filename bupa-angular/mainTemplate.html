@@ -68,24 +68,32 @@
 				      </div>
 				      <div>
 			      <!-- if collection is ALL - show keymatches, cards and related searches-->
+			      <style>
+			      .card-grid{
+			      	font-size: 0;
+			      }
+			      .result-card{
+			      	padding-top:10px;
+			      	border:1px solid #ccc;
+			      	display:inline-flex;
+			      	width:50%;
+			      	font-size:14px;
+			      }
+			      </style>
 				      <div ng-if="currentView == 'cards'">
 				      		<!--products and health information-->
-				      		<div class="row" style="margin-bottom:0px;">
-								<div resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></div>
+				      		<div class="card-grid" style="margin-bottom:0px;">
+								<span resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></span>
 						      	
-						      	<div resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></div>
-						   	</div>	
-				      		<!--maps and claims-->
-				      		<div class="row" style="margin-bottom:0px;">
-								<div resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" params="params" num-results="3"></div>
+						      	<span resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></span>
+				      			<!--maps and claims-->
+								<span resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" params="params" num-results="3"></span>
 						      	
-						      	<div resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" params="params" num-results="5"></div>
-						   	</div>	
-						   	<!--general and related searches-->
-						   	<div class="row" style="margin-bottom:0px;">
-								<div resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="3"></div>
+						      	<span resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" params="params" num-results="5"></span>
+						   		<!--general and related searches-->
+								<span resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="3"></span>
 						      	
-								<div ng-if="clusters.clusters[0].clusters" class="col s12 m12 l6" style="padding-top:20px;">
+								<div ng-if="clusters.clusters[0].clusters" class="result-card col s12 m12 l6" style="padding-top:20px;">
 						          <div class="" style="padding:10px;">
 						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;">Related Searches</div>	
 						            <div ng-repeat="cluster in clusters.clusters[0].clusters" class="cluster-result" > 
