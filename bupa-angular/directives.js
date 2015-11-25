@@ -11,6 +11,7 @@ angular.module('buparesults', ['bupasearchservice'])
         numResults:'@'
     },
     link: function(scope, elem, attrs){
+        scope.bupaconst = bupaconst;
         var pageNo = parseInt(scope.params.page);
         if(scope.mode == 'cards'){
             pageNo = 1

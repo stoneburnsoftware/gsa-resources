@@ -126,7 +126,11 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupaf
                 }
                 return true;
             }else{
-                return Gsa.buckets[$scope.params.site].loaded;
+                if(Gsa.buckets[$scope.params.site] && Gsa.buckets[$scope.params.site].loaded){
+                    return true;
+                }else{
+                    return false;
+                }
             }
             
         }
