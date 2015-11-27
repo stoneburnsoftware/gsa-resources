@@ -1,9 +1,9 @@
-angular.module('bupasearch', ['ngRoute', 'buparesults', 'ui.materialize', 'bupafilters'])
+angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
 .config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', 
     function($routeProvider, $locationProvider, $sceDelegateProvider) {
 	$routeProvider
 	.otherwise({
-		templateUrl: bupaconst.resourceuri +'mainTemplate.html',
+		templateUrl: bupaconst.resourceuri +'main.html',
 		controller: 'mainCtrl'
 	})
 
