@@ -3,7 +3,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
     function($routeProvider, $locationProvider, $sceDelegateProvider) {
 	$routeProvider
 	.otherwise({
-		templateUrl: bupaconst.resourceuri +'main.html',
+		templateUrl: bupaconst.resourceuri +'mainTemplate.html',
 		controller: 'mainCtrl'
 	})
 
@@ -23,6 +23,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
         $scope.params.q = ($scope.params.q || '').replace(/\+/g, " ");
         $scope.searchbox = $scope.params.q;
         $scope.buckets = Gsa.buckets;
+        $scope.bupaconst = bupaconst;
         
         if(
         		$scope.params.site != bupaconst.coll_products_name &&
