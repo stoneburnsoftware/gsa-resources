@@ -1,81 +1,78 @@
 <div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="col result-card s12 m12 l6" >
-    <div class="" style="padding:10px;">
-		<div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;" ng-bind="config.label"></div>
-        <!--map-->
-        <iframe ng-if="collection == bupaconst.coll_maps_name" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d79588.60084359295!2d-0.20354667905273738!3d51.43715339545225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1sen!2suk!4v1439987703475" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-        
-        <!--other-->
-        <div ng-repeat="R in buckets[collection].GSP.RES.R" style="margin-bottom:10px;padding-bottom:10px;border-bottom:0px solid #efefef;">
-            <div ng-if="collection == bupaconst.coll_maps_name" >
-                <div>
-                    <a href="{{R.U}}" ng-bind-html="R.T | html" target="_blank"></a>
-                </div>
-                <div ng-if="R.MT.gsa_geo_res_address" ng-bind="R.MT.gsa_geo_res_address"></div>
-                <div ng-if="!R.MT.gsa_geo_res_address" ng-bind-html="R.S | snippet | html"></div>
-                <ul ng-if="R.MT.gsa_cta_phone">
-                    <li>
-                        <i class="fa fa-phone fa-lg black-text" ></i> <a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
-                    </li>
-                </ul>
+	<div class="card-header" ng-bind="config.label"></div>
+    <!--map-->
+    <iframe ng-if="collection == bupaconst.coll_maps_name" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d79588.60084359295!2d-0.20354667905273738!3d51.43715339545225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1sen!2suk!4v1439987703475" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    
+    <!--other-->
+    <div ng-repeat="R in buckets[collection].GSP.RES.R" class="result-item">
+        <div ng-if="collection == bupaconst.coll_maps_name" >
+            <div>
+                <a class="title" href="{{R.U}}" ng-bind-html="R.T | html" target="_blank"></a>
             </div>
-            <div ng-if="!(collection == bupaconst.coll_maps_name)" >
-              	<div>
-              		<a href="{{R.U}}" ng-bind-html="R.T | html" target="_blank"></a>
-              	</div>
-                <iframe ng-if="($first && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" width="100%" height="150" src="{{R.MT.gsa_video_url | trustSrc}}" frameborder="0" allowfullscreen></iframe>
-              	<div ng-bind-html="R.S | snippet | html"></div>
-              	<div ng-if="$first && collection == bupaconst.coll_products_name">
-	              	<ul ng-if="R.MT.gsa_benefit_1">
-		              	<li ng-if="R.MT.gsa_benefit_1">
-		              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
-		              	</li>
-		              	<li>
-		              	<li ng-if="R.MT.gsa_benefit_2">
-		              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_2"></span>
-		              	</li>
-		              	<li ng-if="R.MT.gsa_benefit_3">
-		              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_3"></span>
-		              	</li>
-	              	</ul>
+            <div ng-if="R.MT.gsa_geo_res_address" ng-bind="R.MT.gsa_geo_res_address"></div>
+            <div ng-if="!R.MT.gsa_geo_res_address" ng-bind-html="R.S | snippet | html"></div>
+            <ul ng-if="R.MT.gsa_cta_phone">
+                <li>
+                    <i class="fa fa-phone fa-lg black-text" ></i> <a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
+                </li>
+            </ul>
+        </div>
+        <div ng-if="!(collection == bupaconst.coll_maps_name)" >
+          	<div>
+          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | html" target="_blank"></a>
+          	</div>
+            <iframe ng-if="($first && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" width="100%" height="150" src="{{R.MT.gsa_video_url | trustSrc}}" frameborder="0" allowfullscreen></iframe>
+          	<div ng-bind-html="R.S | snippet | html"></div>
+          	<div ng-if="$first && collection == bupaconst.coll_products_name">
+              	<ul ng-if="R.MT.gsa_benefit_1">
+	              	<li ng-if="R.MT.gsa_benefit_1">
+	              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
+	              	</li>
+	              	<li>
+	              	<li ng-if="R.MT.gsa_benefit_2">
+	              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_2"></span>
+	              	</li>
+	              	<li ng-if="R.MT.gsa_benefit_3">
+	              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_3"></span>
+	              	</li>
+              	</ul>
 
-	              	<ul ng-if="R.MT.gsa_ctalink">
-		              	<li>
-		              		<i class="fa fa-file-text fa-lg black-text" ></i><a href="{{R.MT.gsa_ctalink_url}}" ng-bind="' ' + R.MT.gsa_ctalink" target="_blank"></a>
-		              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-		              		<i class="fa fa-phone fa-lg black-text" ></i> <a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
-		              	</li>
-	              	</ul>
-	            </div>
+              	<ul ng-if="R.MT.gsa_ctalink">
+	              	<li>
+	              		<i class="fa fa-file-text fa-lg black-text" ></i><a href="{{R.MT.gsa_ctalink_url}}" ng-bind="' ' + R.MT.gsa_ctalink" target="_blank"></a>
+	              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+	              		<i class="fa fa-phone fa-lg black-text" ></i> <a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
+	              	</li>
+              	</ul>
             </div>
         </div>
-        	
-              
-        <div ng-if="mode == 'cards'" class="">
-          <a href="{{config.href}}" style="color:orange;">View more ...</a>
-        </div>
-        <div ng-if="mode == 'fullscreen'">
-            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #efefef;"></div>
-            <div class="grey-text">
-            	<span ng-if="buckets[collection].prevPage.enabled">
-            		<a href="{{buckets[collection].prevPage.href}}">Prev</a>
+    </div>
+    	
+          
+    <div ng-if="mode == 'cards'" class="">
+      <a href="{{config.href}}" class="view-more">View more ...</a>
+    </div>
+    <div ng-if="mode == 'fullscreen'">
+        <div class="grey-text">
+        	<span ng-if="buckets[collection].prevPage.enabled">
+        		<a href="{{buckets[collection].prevPage.href}}">Prev</a>
+        	</span>
+        	<span ng-if="!buckets[collection].prevPage.enabled">
+        		Prev
+        	</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<span ng-repeat="p in buckets[collection].pages">
+        		<span ng-if="!p.selected">
+        			<a href="{{p.href}}" ng-bind="p.num"></a>
             	</span>
-            	<span ng-if="!buckets[collection].prevPage.enabled">
-            		Prev
-            	</span>&nbsp;&nbsp;&nbsp;&nbsp;
-            	<span ng-repeat="p in buckets[collection].pages">
-            		<span ng-if="!p.selected">
-            			<a href="{{p.href}}" ng-bind="p.num"></a>
-	            	</span>
-	            	<span ng-if="p.selected" ng-bind="p.num"></span>	
-            		&nbsp;&nbsp;&nbsp;&nbsp;
-            	</span>
-            	<span ng-if="buckets[collection].nextPage.enabled">
-            		<a href="{{buckets[collection].nextPage.href}}">Next</a>
-            	</span>
-            	<span ng-if="!buckets[collection].nextPage.enabled">
-            		Next
-            	</span>				              
-            </div>
+            	<span ng-if="p.selected" ng-bind="p.num"></span>	
+        		&nbsp;&nbsp;&nbsp;&nbsp;
+        	</span>
+        	<span ng-if="buckets[collection].nextPage.enabled">
+        		<a href="{{buckets[collection].nextPage.href}}">Next</a>
+        	</span>
+        	<span ng-if="!buckets[collection].nextPage.enabled">
+        		Next
+        	</span>				              
         </div>
     </div>
 </div>

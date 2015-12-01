@@ -1,113 +1,57 @@
-<div style="height:70px;"></div>
-	  	<div class="container">  
-	  			<form ng-submit="search()">
-					  <div class="row">
-					    <div class="col s10 m10 l11">
-				          <div class="input-field">
-				            <input id="input_text large" type="text" ng-model="searchbox" gsa-autocomplete/>
-				            <!--  <a class="waves-effect waves-teal btn-flat"><i class="material-icons">search</i></a> -->
-				            <label for="input_text">Search keywords</label>
-				          </div>
-			          	</div>
-					    <div class="col s2 m2 l1" style="padding-left:0px;">
-				          <i class="material-icons medium" style="margin-top:10px;">search</i>	
-				        </div>	
-				      </div>
-			      </form>	
-				  <div class="row" style="padding:0 10px 0 10px;">
-				    <div class="col s10 m10 l12">
-			          <div style="margin-top:0px;margin-bottom:-25px;">
-		          			<span style="font-size:16px;">Search results ... 
-		          			<span ng-if="currentView == 'cards'" style="text-decoration:underline;">All</span>
-		          			<a  ng-if="currentView != 'cards'"href="{{allHref}}">All</a>
-		          			<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-		          			<span ng-if="params.site == coll_products_name" style="text-decoration:underline;">Products</span>
-		          			<a ng-if="params.site != coll_products_name" href="{{cards[coll_products_name].href}}">Products</a>
-		          			<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-		          			<span ng-if="params.site == coll_health_name" style="text-decoration:underline;">Health&nbsp;Information</span>
-		          			<a ng-if="params.site != coll_health_name" href="{{cards[coll_health_name].href}}">Health&nbsp;Information</a>
-		          			<span style="color:#bbb">  |&nbsp;&nbsp;</span>
-		          			<span ng-if="params.site == coll_maps_name" style="text-decoration:underline;">Maps</span>
-		          			<a ng-if="params.site != coll_maps_name" href="{{cards[coll_maps_name].href}}">Maps</a>
-		          			<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-		          			<span ng-if="params.site == coll_claims_name" style="text-decoration:underline;">Claims</span>
-		          			<a ng-if="params.site != coll_claims_name" href="{{cards[coll_claims_name].href}}">Claims</a>
-		          			<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-		          			<span ng-if="params.site == coll_general_name" style="text-decoration:underline;">General</span>
-		          			<a ng-if="params.site != coll_general_name" href="{{cards[coll_general_name].href}}">General</a></span>
-		          		</div>	
-		          	</div>
-			      </div>
-			    <!--keymatches-->
-			    <div ng-repeat="GM in buckets[coll_products_name].GSP.GM">
-			    	<div>
-			    		<a href="{{GM.GL}}" ng-bind="GM.GD"></a>
-			    	</div>
-			    	<div ng-bind="GM.GD"></div>
-			    	<br/>
-			    </div>
 
-			    <div ng-if="params.q">
-			      	<!--no results-->
-				      <div ng-if="allLoaded()">
-						<div ng-if="!hasResults()">
-							<div>
-								<div>Your search <b ng-bind="'\'' + params.q + '\''"></b> did not return any results.</div>
+<div class="container">  
+    <!--keymatches-->
+    <div ng-repeat="GM in buckets[coll_products_name].GSP.GM">
+    	<div>
+    		<a href="{{GM.GL}}" ng-bind="GM.GD"></a>
+    	</div>
+    	<div ng-bind="GM.GD"></div>
+    	<br/>
+    </div>
 
-								<br>
-								<div>Suggestions:</div>
-							   	  
-								<ul class="suggestions_ul">
-									<li>Make sure all words are spelled correctly.</li>
-									<li>Try different keywords.</li>
-									<li>Try more general keywords.</li>
-									<li>Try fewer keywords.</li>
-								</ul>
-							</div>
-						</div>	
-				      </div>
-				      <div>
-			      <!-- if collection is ALL - show keymatches, cards and related searches-->
-			      <style>
-			      .card-grid{
-			      	font-size: 0;
-			      }
-			      .card-grid .result-card{
-			      	padding-top:10px;
-			      	display:inline-table;
-			      	font-size:14px;
-			      	float:none;
-			      }
-			      </style>
-				      <div ng-if="currentView == 'cards'">
-				      		<!--products and health information-->
-				      		<div class="row card-grid" style="margin-bottom:0px;">
-								<span resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></span>
-						      	
-						      	<span resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></span>
-				      			<!--maps and claims-->
-								<span resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" params="params" num-results="3"></span>
-						      	
-						      	<span resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" params="params" num-results="5"></span>
-						   		<!--general and related searches-->
-								<span resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="5"></span>
-						      	
-								<div ng-if="clusters.clusters[0].clusters" class="result-card col s12 m12 l6" >
-						          <div class="" style="padding:10px;">
-						            <div class="black-text" style="font-size:30px;margin-bottom:20px;border-bottom:1px solid #ddd;">Related Searches</div>	
-						            <div ng-repeat="cluster in clusters.clusters[0].clusters" class="cluster-result" > 
-						            	<a href="#" ng-bind="cluster.label" ng-click="searchFor(cluster.label)"></a>
-      								</div>
-						     	</div>					     	
-						     	
-						       </div>
-						   	</div>	
-				      		
-				      </div>
-				      <!-- if collection is not ALL - show the fullscreen card-->
-				      <div ng-if="currentView == 'fullscreen'">
-				      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="10"></div>
-				      </div>
-			   	</div>
+    <div ng-if="params.q">
+      	<!--no results-->
+	      <div ng-if="allLoaded()">
+			<div ng-if="!hasResults()">
+				<span class="p"><br>
+				   Your search <b ng-bind="'\'' + params.q + '\''"></b> did not return any results.
+				   <br><br></span>
+				Suggestions:
+				<ul class="suggestions_ul">
+				   <li>Make sure all words are spelled correctly.</li>
+				   <li>Try different keywords.</li>
+				   <li>Try more general keywords.</li>
+				   <li>Try fewer keywords.</li>
+				</ul>
 			</div>	
-	    </div>
+	      </div>
+	      <div>
+		      <!-- if collection is ALL - show keymatches, cards and related searches-->
+			  <div ng-if="currentView == 'cards'">
+			      <div class="row card-grid" style="margin-bottom:0px;">
+						<span resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></span>
+					      	
+				      	<span resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></span>
+		      			<!--maps and claims-->
+						<span resultscard collection="{{coll_maps_name}}" config="cards[coll_maps_name]" mode="{{currentView}}" params="params" num-results="3"></span>
+				      	
+				      	<span resultscard collection="{{coll_claims_name}}" config="cards[coll_claims_name]" mode="{{currentView}}" params="params" num-results="5"></span>
+				   		<!--general and related searches-->
+						<span resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="5"></span>
+				      	
+						<div ng-if="clusters.clusters[0].clusters" class="result-card col s12 m12 l6" >
+				            <div class="card-header" >Related Searches</div>	
+				            <div ng-repeat="cluster in clusters.clusters[0].clusters" class="cluster-result" > 
+				            	<a href="#" ng-bind="cluster.label" ng-click="searchFor(cluster.label)"></a>
+							</div>
+					    </div>
+					</div>	
+			      		
+			   </div>
+			      <!-- if collection is not ALL - show the fullscreen card-->
+			   <div ng-if="currentView == 'fullscreen'">
+			      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="10"></div>
+			   </div>
+		</div>
+	</div>
+</div>
