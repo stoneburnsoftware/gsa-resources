@@ -24,26 +24,24 @@
             <iframe ng-if="($first && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" width="100%" height="150" src="{{R.MT.gsa_video_url | trustSrc}}" frameborder="0" allowfullscreen></iframe>
           	<div ng-bind-html="R.S | snippet | html"></div>
           	<div ng-if="$first && collection == bupaconst.coll_products_name">
-              	<ul ng-if="R.MT.gsa_benefit_1">
+              	<ul ng-if="R.MT.gsa_benefit_1" class="benefits-list">
 	              	<li ng-if="R.MT.gsa_benefit_1">
-	              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
+	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
 	              	</li>
 	              	<li>
 	              	<li ng-if="R.MT.gsa_benefit_2">
-	              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_2"></span>
+	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_2"></span>
 	              	</li>
 	              	<li ng-if="R.MT.gsa_benefit_3">
-	              		<i class="fa fa-check-circle fa-lg green-text" ></i><span ng-bind="' ' + R.MT.gsa_benefit_3"></span>
+	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_3"></span>
 	              	</li>
               	</ul>
 
-              	<ul ng-if="R.MT.gsa_ctalink">
-	              	<li>
-	              		<i class="fa fa-file-text fa-lg black-text" ></i><a href="{{R.MT.gsa_ctalink_url}}" ng-bind="' ' + R.MT.gsa_ctalink" target="_blank"></a>
-	              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-	              		<i class="fa fa-phone fa-lg black-text" ></i> <a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
-	              	</li>
-              	</ul>
+              	<div ng-if="R.MT.gsa_ctalink" class="cta-list">
+              		<i class="cta"/><a href="{{R.MT.gsa_ctalink_url}}" ng-bind="' ' + R.MT.gsa_ctalink" target="_blank"></a>
+              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              		<i class="phone"/><a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
+              	</div>
             </div>
         </div>
     </div>
