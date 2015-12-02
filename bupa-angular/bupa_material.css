@@ -53,6 +53,10 @@ a.view-more:active {
   line-height: 2;
 }
 
+.angular-google-map-container { 
+  height: 150px; 
+}
+
 /*bupa icons*/
 
 i.check {

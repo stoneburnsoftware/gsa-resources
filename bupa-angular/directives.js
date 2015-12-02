@@ -20,4 +20,4 @@ angular.module('buparesults', ['bupasearchservice'])
         scope.buckets = Gsa.buckets;
     }
   };
-}]);
+}])

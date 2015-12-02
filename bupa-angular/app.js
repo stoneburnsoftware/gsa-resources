@@ -1,6 +1,6 @@
-angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
-.config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', 
-    function($routeProvider, $locationProvider, $sceDelegateProvider) {
+angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters', 'uiGmapgoogle-maps'])
+.config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', 'uiGmapGoogleMapApiProvider', 
+    function($routeProvider, $locationProvider, $sceDelegateProvider, uiGmapGoogleMapApiProvider) {
 	$routeProvider
 	.otherwise({
 		templateUrl: bupaconst.resourceuri +'mainTemplate.html',
@@ -15,9 +15,15 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
         // Allow loading from our assets domain.  Notice the difference between * and **.
         bupaconst.resourceuri + '**'
     ]);
+
+    uiGmapGoogleMapApiProvider.configure({
+        //    key: 'your api key',
+        v: '3.20', //defaults to latest 3.X anyhow
+        libraries: 'weather,geometry,visualization'
+    });
 }])
-.controller("mainCtrl", ['$scope', '$location', 'Gsa', '$http',
-	function($scope, $location, Gsa, $http) {
+.controller("mainCtrl", ['$scope', '$location', 'Gsa', '$http', 'uiGmapGoogleMapApi', 
+	function($scope, $location, Gsa, $http, uiGmapGoogleMapApi) {
         //$scope.params = $location.search();
         $scope.params = parseLocation(window.location.search);
         $scope.params.q = ($scope.params.q || '').replace(/\+/g, " ");
@@ -84,7 +90,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
         $scope.allHref = $location.path() +'?' + jQuery.param(p);
 
         //load clusters
-        var clusterUri = bupaconst.gsauri + '/cluster?q='+encodeURIComponent($scope.params.q)+'&site=default_collection&client=bupa&proxystylesheet=json&filter=0';
+        var clusterUri = bupaconst.gsauri + '/cluster?q='+encodeURIComponent($scope.params.q)+'&site='+bupaconst.coll_all_name+'&client=bupa&proxystylesheet=json&filter=0';
         $http.post(clusterUri).
         success(function(data, status, headers, config) {
             // this callback will be called asynchronously
@@ -135,13 +141,13 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters'])
             }
             
         }
+
+        uiGmapGoogleMapApi.then(function(maps) {
+            console.log('loading maps');
+            $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+        });
     }
 ])
-.filter('html', ['$sce', function($sce){
-    return function(text) {
-        return $sce.trustAsHtml(text);
-    };
-}]);
 //workaround for html5mode = false
 var parseLocation = function(location) {
     var pairs = location.substring(1).split("&");

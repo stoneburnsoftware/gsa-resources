@@ -1,13 +1,14 @@
 <div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="col result-card s12 m12 l6" >
 	<div class="card-header" ng-bind="config.label"></div>
     <!--map-->
-    <iframe ng-if="collection == bupaconst.coll_maps_name" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d79588.60084359295!2d-0.20354667905273738!3d51.43715339545225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1sen!2suk!4v1439987703475" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    <!--<iframe ng-if="collection == bupaconst.coll_maps_name" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d79588.60084359295!2d-0.20354667905273738!3d51.43715339545225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1sen!2suk!4v1439987703475" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen=""></iframe>-->
+    <div ui-gmap-google-map center="map.center" zoom="map.zoom"></div>
     
     <!--other-->
     <div ng-repeat="R in buckets[collection].GSP.RES.R" class="result-item">
         <div ng-if="collection == bupaconst.coll_maps_name" >
             <div>
-                <a class="title" href="{{R.U}}" ng-bind-html="R.T | html" target="_blank"></a>
+                <a class="title" href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
             </div>
             <div ng-if="R.MT.gsa_geo_res_address" ng-bind="R.MT.gsa_geo_res_address"></div>
             <div ng-if="!R.MT.gsa_geo_res_address" ng-bind-html="R.S | snippet | html"></div>
@@ -17,11 +18,11 @@
         </div>
         <div ng-if="!(collection == bupaconst.coll_maps_name)" >
           	<div>
-          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | html" target="_blank"></a>
+          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
           	</div>
             <iframe ng-if="($first && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" width="100%" height="150" src="{{R.MT.gsa_video_url | trustSrc}}" frameborder="0" allowfullscreen></iframe>
           	<div ng-bind-html="R.S | snippet | html"></div>
-          	<div ng-if="$first && collection == bupaconst.coll_products_name">
+          	<div ng-if="mode == 'fullscreen' || ($first && collection == bupaconst.coll_products_name)">
               	<ul ng-if="R.MT.gsa_benefit_1" class="benefits-list">
 	              	<li ng-if="R.MT.gsa_benefit_1">
 	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
