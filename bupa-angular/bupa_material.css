@@ -12,6 +12,10 @@
   font-size:14px;
 }
 
+.result-card .map {
+  margin-bottom: 10px;
+}
+
 .result-card iframe {
   margin-bottom: 10px;
 }

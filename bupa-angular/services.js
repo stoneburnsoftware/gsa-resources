@@ -99,7 +99,25 @@ angular.module('bupasearchservice', [])
 	                        href: $location.path()+ '?' + jQuery.param(p)
 	                    };
 	                }
+
+	                //maps data processing
+	                response.data.markers = [];
+	                for(i in response.data.GSP.RES.R){
+	                	var R = response.data.GSP.RES.R[i];
+	                	if(R.MT.gsa_geo_res_lat){
+	                		response.data.markers.push({
+	                			title: R.MT.gsa_geo_res_title,
+	                			url: R.U,
+	                			address: R.MT.gsa_geo_res_address,
+	                			location:{
+	                				latitude: R.MT.gsa_geo_res_lat,
+	                				longitude: R.MT.gsa_geo_res_long
+	                			}
+	                		})
+	                	}
+	                }
            		}
+
            		buckets[site] = response.data;
 			}
 

@@ -17,13 +17,13 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters', 'uiGmapgo
     ]);
 
     uiGmapGoogleMapApiProvider.configure({
-        //    key: 'your api key',
+        key: bupaconst.google_maps_key,
         v: '3.20', //defaults to latest 3.X anyhow
         libraries: 'weather,geometry,visualization'
     });
 }])
-.controller("mainCtrl", ['$scope', '$location', 'Gsa', '$http', 'uiGmapGoogleMapApi', 
-	function($scope, $location, Gsa, $http, uiGmapGoogleMapApi) {
+.controller("mainCtrl", ['$scope', '$location', 'Gsa', '$http',
+	function($scope, $location, Gsa, $http) {
         //$scope.params = $location.search();
         $scope.params = parseLocation(window.location.search);
         $scope.params.q = ($scope.params.q || '').replace(/\+/g, " ");
@@ -141,11 +141,7 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters', 'uiGmapgo
             }
             
         }
-
-        uiGmapGoogleMapApi.then(function(maps) {
-            console.log('loading maps');
-            $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
-        });
+        
     }
 ])
 //workaround for html5mode = false
