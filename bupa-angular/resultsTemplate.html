@@ -1,4 +1,4 @@
-<div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="col result-card s12 m12 l6" >
+<div ng-if="buckets[collection].loaded && buckets[collection].hasResults" class="col result-card s12 m12" ng-class="{'l6' : (mode == 'cards'), 'l12' : (mode == 'fullscreen')}" >
 	<div class="card-header" ng-bind="config.label"></div>
     <!--map-->
     <!--<iframe ng-if="collection == bupaconst.coll_maps_name" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d79588.60084359295!2d-0.20354667905273738!3d51.43715339545225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital!5e0!3m2!1sen!2suk!4v1439987703475" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen=""></iframe>-->
@@ -56,26 +56,28 @@
     <div ng-if="mode == 'cards'" class="">
       <a href="{{config.href}}" class="view-more">View more ...</a>
     </div>
-    <div ng-if="mode == 'fullscreen'">
-        <div class="grey-text">
-        	<span ng-if="buckets[collection].prevPage.enabled">
-        		<a href="{{buckets[collection].prevPage.href}}">Prev</a>
+    <div ng-if="mode == 'fullscreen' && buckets[collection].pages">
+        <div >
+        	<span ng-if="buckets[collection].prevPage.enabled" class="paging-large" >
+        		<img style="margin-right:10px;" src="http://www.bupa.co.uk/assets/Search/HMFTP/Bupa/images/pagination_previous.png" width="8" height="11" alt="Previous">
+            <a href="{{buckets[collection].prevPage.href}}">Prev</a>
         	</span>
-        	<span ng-if="!buckets[collection].prevPage.enabled">
-        		Prev
+        	<span ng-if="!buckets[collection].prevPage.enabled" class="paging-large" >
+        		<img style="margin-right:10px;" src="http://www.bupa.co.uk/assets/Search/HMFTP/Bupa/images/pagination_previous.png" width="8" height="11" alt="Previous">Prev
         	</span>&nbsp;&nbsp;&nbsp;&nbsp;
         	<span ng-repeat="p in buckets[collection].pages">
         		<span ng-if="!p.selected">
         			<a href="{{p.href}}" ng-bind="p.num"></a>
             	</span>
-            	<span ng-if="p.selected" ng-bind="p.num"></span>	
+            	<span ng-if="p.selected" ng-bind="p.num" class="paging-large" ></span>	
         		&nbsp;&nbsp;&nbsp;&nbsp;
         	</span>
-        	<span ng-if="buckets[collection].nextPage.enabled">
+        	<span ng-if="buckets[collection].nextPage.enabled" class="paging-large" >
         		<a href="{{buckets[collection].nextPage.href}}">Next</a>
+            <img style="margin-left:10px;" src="http://www.bupa.co.uk/assets/Search/HMFTP/Bupa/images/pagination_next.png" width="8" height="11" alt="Next">
         	</span>
-        	<span ng-if="!buckets[collection].nextPage.enabled">
-        		Next
+        	<span ng-if="!buckets[collection].nextPage.enabled" class="paging-large" >
+        		<img style="margin-left:10px;" src="http://www.bupa.co.uk/assets/Search/HMFTP/Bupa/images/pagination_next.png" width="8" height="11" alt="Next">Next
         	</span>				              
         </div>
     </div>

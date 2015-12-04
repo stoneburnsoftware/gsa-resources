@@ -1,3 +1,11 @@
+.bupa-font {
+  font-family: "Bupa", sans-serif;
+}
+
+.paging-large {
+  font-size: 16px;
+}
+
 .card-grid{
   font-size: 0;
 }

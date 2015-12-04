@@ -24,10 +24,10 @@
 				</ul>
 			</div>	
 	      </div>
-	      <div>
+	      <div  class="row card-grid">
 		      <!-- if collection is ALL - show keymatches, cards and related searches-->
 			  <div ng-if="currentView == 'cards'">
-			      <div class="row card-grid" style="margin-bottom:0px;">
+			      <div>
 						<span resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></span>
 					      	
 				      	<span resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></span>
