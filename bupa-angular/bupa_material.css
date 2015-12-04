@@ -69,6 +69,10 @@ a.view-more:active {
   height: 150px; 
 }
 
+.keymatches {
+  margin-left: 14px;
+}
+
 /*bupa icons*/
 
 i.check {
