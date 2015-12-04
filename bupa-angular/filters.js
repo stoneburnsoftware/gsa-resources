@@ -28,3 +28,9 @@ angular.module('bupafilters', [])
     .replace(/\| .../g, "")
   };
 }])
+.filter('youtubeEmbed', [function() {
+  return function(input) {
+    return input.replace(/www\.youtube\.com\/watch\?v=/g, "www.youtube.com/embed/");
+  };
+}])
+
