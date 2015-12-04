@@ -69,7 +69,7 @@
         		<span ng-if="!p.selected">
         			<a href="{{p.href}}" ng-bind="p.num"></a>
             	</span>
-            	<span ng-if="p.selected" ng-bind="p.num" class="paging-large" ></span>	
+            	<span ng-if="p.selected" class="paging-large"><strong ng-bind="p.num" ></strong></span>	
         		&nbsp;&nbsp;&nbsp;&nbsp;
         	</span>
         	<span ng-if="buckets[collection].nextPage.enabled" class="paging-large" >
