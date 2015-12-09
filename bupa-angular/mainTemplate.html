@@ -1,13 +1,4 @@
 <div>  
-    <!--keymatches-->
-    <div ng-repeat="GM in buckets[coll_products_name].GSP.GM" class="keymatches">
-    	<div>
-    		<a href="{{GM.GL}}" ng-bind="GM.GD"></a>
-    	</div>
-    	<div ng-bind="GM.GL"></div>
-    	<br/>
-    </div>
-
     <div ng-if="params.q">
       	<!--no results-->
 	      <div ng-if="allLoaded()">
@@ -24,10 +15,18 @@
 				</ul>
 			</div>	
 	      </div>
-	      <div  class="row card-grid">
+	      <div>
 		      <!-- if collection is ALL - show keymatches, cards and related searches-->
 			  <div ng-if="currentView == 'cards'">
-			      <div>
+			  		<!--keymatches-->
+				    <div ng-repeat="GM in buckets[coll_products_name].GSP.GM">
+				    	<div>
+				    		<a href="{{GM.GL}}" ng-bind="GM.GD"></a>
+				    	</div>
+				    	<div ng-bind="GM.GD"></div>
+				    	<br/>
+				    </div>
+			      <div class="row card-grid" style="margin-bottom:0px;">
 						<span resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></span>
 					      	
 				      	<span resultscard collection="{{coll_health_name}}" config="cards[coll_health_name]" mode="{{currentView}}" params="params" num-results="4"></span>
@@ -49,7 +48,8 @@
 			   </div>
 			      <!-- if collection is not ALL - show the fullscreen card-->
 			   <div ng-if="currentView == 'fullscreen'">
-			      		<div resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="10"></div>
+			      		<div ng-if="params.site == coll_maps_name" resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="5"></div>
+			      		<div ng-if="params.site != coll_maps_name" resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="10"></div>
 			   </div>
 		</div>
 	</div>

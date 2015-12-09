@@ -17,9 +17,9 @@ angular.module('bupasearch', ['ngRoute', 'buparesults', 'bupafilters', 'uiGmapgo
     ]);
 
     uiGmapGoogleMapApiProvider.configure({
-        key: bupaconst.google_maps_key,
-        v: '3.20', //defaults to latest 3.X anyhow
-        libraries: 'weather,geometry,visualization'
+        key: bupaconst.google_maps_key//,
+        //libraries: 'weather,geometry,visualization',
+        //v: '3.20', //defaults to latest 3.X anyhow
     });
 }])
 .controller("mainCtrl", ['$scope', '$location', 'Gsa', '$http',
