@@ -3,7 +3,7 @@
 }
 
 .row.card-grid .col.result-card{
-  padding-top:10px;
+  padding-bottom:20px;
   display:inline-table;
   float:none;
 }
@@ -22,7 +22,6 @@
 
 .card-header {
   font-size:30px;
-  margin-top:10px;
   margin-bottom:20px;
   border-bottom:1px solid #ddd;
   color: #000;
