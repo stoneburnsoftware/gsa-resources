@@ -38,7 +38,14 @@
        			<div>
 	          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
 	          	</div>
-	          	<div ng-if="(($first || mode == 'fullscreen') && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="hide-on-med-and-up">
+	          	<div ng-if="(mode == 'fullscreen' && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="hide-on-med-and-up">
+        			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
+					  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
+					  	<div class="play"></div>
+					  </div>
+					</a>
+        		</div>
+        		<div ng-if="($first && mode == 'cards' && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url">
         			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
 					  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
 					  	<div class="play"></div>
@@ -67,7 +74,7 @@
 	              	</div>
 	            </div>
        		</div>
-        	<div ng-if="(($first || mode == 'fullscreen') && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="thumbnail-col hide-on-small-and-down">
+        	<div ng-if="(mode == 'fullscreen' && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="thumbnail-col hide-on-small-and-down">
        			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
 				  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
 				  	<div class="play"></div>
