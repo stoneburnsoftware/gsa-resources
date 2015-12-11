@@ -2,7 +2,7 @@
     <div ng-if="params.q">
       	<!--no results-->
 	      <div ng-if="allLoaded()">
-			<div ng-if="!hasResults()">
+			<div ng-if="!hasResults()" class="mat-no-results">
 				<span class="p"><br>
 				   Your search <b ng-bind="'\'' + params.q + '\''"></b> did not return any results.
 				   <br><br></span>

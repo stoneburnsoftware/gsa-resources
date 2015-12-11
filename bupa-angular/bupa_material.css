@@ -2,7 +2,7 @@
   font-size: 0;
 }
 
-.row.card-grid .col.result-card{
+.row .col.result-card{
   padding-bottom:20px;
   display:inline-table;
   float:none;
@@ -70,6 +70,11 @@ a.view-more:active {
     background-position: center; 
     background-size: cover;
     position: relative;
+}
+
+.call-tandc,
+.mat-no-results {
+    margin-left: 10px;
 }
 
 /*bupa icons*/
