@@ -47,7 +47,7 @@
 			      		
 			   </div>
 			      <!-- if collection is not ALL - show the fullscreen card-->
-			   <div ng-if="currentView == 'fullscreen'">
+			   <div ng-if="currentView == 'fullscreen'" class="row">
 			      		<div ng-if="params.site == coll_maps_name" resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="5"></div>
 			      		<div ng-if="params.site != coll_maps_name" resultscard collection="{{params.site}}" config="cards[params.site]" mode="{{currentView}}" params="params" num-results="10"></div>
 			   </div>

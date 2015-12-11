@@ -32,7 +32,8 @@
   margin-bottom:20px;
 }
   .result-item .title {
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 1.1;
   }
 
   .result-item .benefits-list {
@@ -48,17 +49,27 @@
 a.view-more,
 a.view-more:hover,
 a.view-more:active {
-  color:orange;
-  text-decoration: none;
+  	color: #F39C00;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .cluster-result {
   line-height: 2;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .angular-google-map-container { 
   height: 150px; 
+}
+
+.card-banner {
+	width:100%;
+	height:150px;
+	background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
 }
 
 /*bupa icons*/
