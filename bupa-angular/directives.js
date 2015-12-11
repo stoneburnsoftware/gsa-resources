@@ -28,6 +28,11 @@ angular.module('buparesults', ['bupasearchservice'])
                     zoom: 6,
                     pan: false
                 };
+                 scope.map2 = { 
+                     center: { latitude: 54, longitude: -3 },
+                     zoom: 6,
+                     pan: false
+                 };//make a separate map for responsive use
             });
         }
     }
