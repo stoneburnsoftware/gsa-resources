@@ -33,41 +33,52 @@
             </div>
         </div>
         <div ng-if="!(collection == bupaconst.coll_maps_name)" >
-          	<div>
-          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
-          	</div>
-            <!-- iframe embed -->
-            <!-- <iframe ng-if="($first && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" width="100%" height="150" src="{{R.MT.gsa_video_url | youtubeEmbed | trustSrc}}" frameborder="0" allowfullscreen></iframe>
-          	-->
-			<div ng-if="(($first || mode == 'fullscreen') && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" >
-				<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
-				  <div class="card-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
+        		
+       		<div class="snippet-col">
+       			<div>
+	          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
+	          	</div>
+	          	<div ng-if="(($first || mode == 'fullscreen') && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="hide-on-med-and-up">
+        			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
+					  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
+					  	<div class="play"></div>
+					  </div>
+					</a>
+        		</div>
+	          	<div ng-bind-html="R.S | snippet | html"></div>
+	          	<div ng-if="mode == 'fullscreen' || ($first && collection == bupaconst.coll_products_name)">
+	              	<ul ng-if="R.MT.gsa_benefit_1" class="benefits-list">
+		              	<li ng-if="R.MT.gsa_benefit_1">
+		              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
+		              	</li>
+		              	<li>
+		              	<li ng-if="R.MT.gsa_benefit_2">
+		              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_2"></span>
+		              	</li>
+		              	<li ng-if="R.MT.gsa_benefit_3">
+		              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_3"></span>
+		              	</li>
+	              	</ul>
+	
+	              	<div ng-if="R.MT.gsa_ctalink" class="cta-list">
+	              		<i class="cta"/><a href="{{R.MT.gsa_ctalink_url}}" ng-bind="' ' + R.MT.gsa_ctalink" target="_blank"></a>
+	              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+	              		<i class="phone"/><a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
+	              	</div>
+	            </div>
+       		</div>
+        	<div ng-if="(($first || mode == 'fullscreen') && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="thumbnail-col hide-on-small-and-down">
+       			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
+				  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
 				  	<div class="play"></div>
 				  </div>
 				</a>
-			</div>
-
-          	<div ng-bind-html="R.S | snippet | html"></div>
-          	<div ng-if="mode == 'fullscreen' || ($first && collection == bupaconst.coll_products_name)">
-              	<ul ng-if="R.MT.gsa_benefit_1" class="benefits-list">
-	              	<li ng-if="R.MT.gsa_benefit_1">
-	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_1"></span>
-	              	</li>
-	              	<li>
-	              	<li ng-if="R.MT.gsa_benefit_2">
-	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_2"></span>
-	              	</li>
-	              	<li ng-if="R.MT.gsa_benefit_3">
-	              		<i class="check"/><span ng-bind="' ' + R.MT.gsa_benefit_3"></span>
-	              	</li>
-              	</ul>
-
-              	<div ng-if="R.MT.gsa_ctalink" class="cta-list">
-              		<i class="cta"/><a href="{{R.MT.gsa_ctalink_url}}" ng-bind="' ' + R.MT.gsa_ctalink" target="_blank"></a>
-              		<span style="color:#bbb">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-              		<i class="phone"/><a href="tel:{{R.MT.gsa_cta_phone}}" ng-bind="' ' + R.MT.gsa_cta_phone"></a>
-              	</div>
-            </div>
+        	</div>
+        	
+            <!-- iframe embed -->
+            <!-- <iframe ng-if="($first && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" width="100%" height="150" src="{{R.MT.gsa_video_url | youtubeEmbed | trustSrc}}" frameborder="0" allowfullscreen></iframe>
+          	-->
+        	
         </div>
     </div>
     	
