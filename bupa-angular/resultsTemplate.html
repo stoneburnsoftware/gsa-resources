@@ -36,21 +36,37 @@
         		
        		<div class="snippet-col">
        			<div>
-	          		<a class="title" href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
+	          		<a class="title" ng-href="{{R.U}}" ng-bind-html="R.T | resultTitle | html" target="_blank"></a>
 	          	</div>
-	          	<div ng-if="(mode == 'fullscreen' && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="hide-on-med-and-up">
-        			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
-					  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
-					  	<div class="play"></div>
-					  </div>
-					</a>
+	          	<div ng-if="(mode == 'fullscreen' && collection == bupaconst.coll_health_name)" class="hide-on-med-and-up">
+					<div ng-if="R.MT.gsa_video_url">
+        				<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
+						  <div class="image-banner" ng-style="{'background-image':'url(&quot;{{R.MT.gsa_image_url}}&quot;)'}">
+						  	<div class="play"></div>
+						  </div>
+						</a>
+        			</div>
+        			<div ng-if="!R.MT.gsa_video_url && R.MT.gsa_image_url">
+        				<a ng-href="{{R.U}}" target="_blank">
+						  <div class="image-banner" ng-style="{'background-image':'url(&quot;{{R.MT.gsa_image_url}}&quot;)'}">
+						  </div>
+						</a>
+        			</div>
         		</div>
-        		<div ng-if="($first && mode == 'cards' && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url">
-        			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
-					  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
-					  	<div class="play"></div>
-					  </div>
-					</a>
+        		<div ng-if="($first && mode == 'cards' && collection == bupaconst.coll_health_name)">
+        			<div ng-if="R.MT.gsa_video_url">
+        				<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
+						  <div class="image-banner" ng-style="{'background-image':'url(&quot;{{R.MT.gsa_image_url}}&quot;)'}">
+						  	<div class="play"></div>
+						  </div>
+						</a>
+        			</div>
+        			<div ng-if="!R.MT.gsa_video_url && R.MT.gsa_image_url">
+        				<a ng-href="{{R.U}}" target="_blank">
+						  <div class="image-banner" ng-style="{'background-image':'url(&quot;{{R.MT.gsa_image_url}}&quot;)'}">
+						  </div>
+						</a>
+        			</div>
         		</div>
 	          	<div ng-bind-html="R.S | snippet | html"></div>
 	          	<div ng-if="mode == 'fullscreen' || ($first && collection == bupaconst.coll_products_name)">
@@ -74,12 +90,20 @@
 	              	</div>
 	            </div>
        		</div>
-        	<div ng-if="(mode == 'fullscreen' && collection == bupaconst.coll_health_name) && R.MT.gsa_video_url" class="thumbnail-col hide-on-small-and-down">
-       			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
-				  <div class="image-banner" ng-style="{'background-image':'url({{R.MT.gsa_image_url}})'}">
-				  	<div class="play"></div>
-				  </div>
-				</a>
+        	<div ng-if="(mode == 'fullscreen' && collection == bupaconst.coll_health_name)" class="thumbnail-col hide-on-small-and-down">
+				<div ng-if="R.MT.gsa_video_url" class="thumbnail-col hide-on-small-and-down">
+	       			<a prettyp ng-href="{{R.MT.gsa_video_url}}" rel="prettyPhoto" target="_blank">
+					  <div class="image-banner" ng-style="{'background-image':'url(&quot;{{R.MT.gsa_image_url}}&quot;)'}">
+					  	<div class="play"></div>
+					  </div>
+					</a>
+	        	</div>
+	        	<div ng-if="!R.MT.gsa_video_url && R.MT.gsa_image_url" class="thumbnail-col hide-on-small-and-down">
+	       			<a ng-href="{{R.U}}" target="_blank">
+					  <div class="image-banner" ng-style="{'background-image':'url(&quot;{{R.MT.gsa_image_url}}&quot;)'}">
+					  </div>
+					</a>
+	        	</div>
         	</div>
         	
             <!-- iframe embed -->
