@@ -99,6 +99,11 @@ a.view-more:active {
     margin-left: 10px;
 }
 
+.l-table {
+	display:table;
+	width:100%
+}
+
 /*bupa icons*/
 
 i.check {
