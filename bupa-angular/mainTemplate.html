@@ -19,12 +19,10 @@
 		      <!-- if collection is ALL - show keymatches, cards and related searches-->
 			  <div ng-if="currentView == 'cards'">
 			  		<!--keymatches-->
-				    <div ng-repeat="GM in buckets[coll_products_name].GSP.GM">
-				    	<div>
-				    		<a href="{{GM.GL}}" ng-bind="GM.GD"></a>
+				    <div ng-if="buckets[coll_products_name].GSP.GM" class="keymatch-holder">
+				    	<div ng-repeat="GM in buckets[coll_products_name].GSP.GM" class="keymatch">
+				    		<i class="fa fa-hand-o-right fa-2x"></i> <a href="{{GM.GL}}" ng-bind="GM.GD"></a>
 				    	</div>
-				    	<div ng-bind="GM.GD"></div>
-				    	<br/>
 				    </div>
 			      <div class="row card-grid" style="margin-bottom:0px;">
 						<span resultscard collection="{{coll_products_name}}" config="cards[coll_products_name]" mode="{{currentView}}" params="params" num-results="4"></span>

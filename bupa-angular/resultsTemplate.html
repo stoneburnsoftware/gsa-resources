@@ -11,7 +11,7 @@
         </ui-gmap-windows>
       </div>
     </div>
-    <div ng-if="buckets[collection].markers.length > 0 && mode == 'fullscreen'" class="map-tall hide-on-med-and-down" ui-gmap-google-map center="map2.center" zoom="map2.zoom" pan="map2.pan">
+    <div ng-if="buckets[collection].markers.length > 0" ng-show="mode == 'fullscreen'" class="map-tall hide-on-med-and-down" ui-gmap-google-map center="map2.center" zoom="map2.zoom" pan="map2.pan">
       <div ui-gmap-markers models="buckets[collection].markers" coords="'location'" fit="true" idkey="'url'">
         <ui-gmap-windows show="show">
             <div ng-non-bindable>{{title}}</div>

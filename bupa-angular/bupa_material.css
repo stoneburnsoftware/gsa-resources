@@ -104,6 +104,20 @@ a.view-more:active {
 	width:100%
 }
 
+.keymatch-holder {
+	margin-left: 15px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.keymatch i{
+	color: #0079c8;
+}
+
+i.fa {
+	background-image: none;
+}
+
 /*bupa icons*/
 
 i.check {
