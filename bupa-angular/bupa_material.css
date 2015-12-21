@@ -16,6 +16,7 @@
   vertical-align: top; 
   display: inline-block;
   float:none;
+  text-align: left;
 }
 
 @media only screen and (min-width: 993px){
