@@ -35,12 +35,14 @@
 				   		<!--general and related searches-->
 						<span resultscard collection="{{coll_general_name}}" config="cards[coll_general_name]" mode="{{currentView}}" params="params" num-results="5"></span>
 				      	
-						<div ng-if="clusters.clusters[0].clusters" class="result-card col s12 m12 l6" >
-				            <div class="card-header" >Related Searches</div>	
-				            <div ng-repeat="cluster in clusters.clusters[0].clusters" class="cluster-result" > 
-				            	<a href="#" ng-bind="cluster.label" ng-click="searchFor(cluster.label)"></a>
+						<span ng-if="clusters.clusters[0].clusters">
+							<div class="result-card col s12 m12 l6" >
+					            <div class="card-header" >Related Searches</div>	
+					            <div ng-repeat="cluster in clusters.clusters[0].clusters" class="cluster-result" > 
+					            	<a href="#" ng-bind="cluster.label" ng-click="searchFor(cluster.label)"></a>
+								</div>
 							</div>
-					    </div>
+					    </span>
 					</div>	
 			      		
 			   </div>

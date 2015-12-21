@@ -1,11 +1,31 @@
-.card-grid{
+.row.card-grid{
   font-size: 0;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+
+.row.card-grid:after{
+   content: "";
+   display: inline-block;
+   width: 100%;
 }
 
 .row .col.result-card{
-  padding-bottom:20px;
-  display:inline-table;
+  padding:0 0 20px 0;
+  /*display:inline-table;*/
+  vertical-align: top; 
+  display: inline-block;
   float:none;
+}
+
+@media only screen and (min-width: 993px){
+.row .col.result-card.l6 {
+    width: 48%; 
+    margin-left: 0;
+}}
+
+#holder_padding {
+	padding:0 15px
 }
 
 .result-card{
@@ -94,18 +114,13 @@ a.view-more:active {
 	vertical-align: top;
 }
 
-.call-tandc,
-.mat-no-results {
-    margin-left: 10px;
-}
-
 .l-table {
 	display:table;
 	width:100%
 }
 
 .keymatch-holder {
-	margin-left: 15px;
+	margin-left: 3px;
 	line-height: 1.5;
 	margin-bottom: 10px;
 }
