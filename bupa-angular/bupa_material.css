@@ -122,7 +122,10 @@ a.view-more:active {
 
 .keymatch-holder {
 	margin-left: 3px;
-	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.keymatch{
 	margin-bottom: 10px;
 }
 

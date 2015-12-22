@@ -21,7 +21,8 @@
 			  		<!--keymatches-->
 				    <div ng-if="buckets[coll_products_name].GSP.GM" class="keymatch-holder">
 				    	<div ng-repeat="GM in buckets[coll_products_name].GSP.GM" class="keymatch">
-				    		<i class="fa fa-hand-o-right fa-2x"></i> <a href="{{GM.GL}}" ng-bind="GM.GD"></a>
+				    		<!-- <i class="fa fa-hand-o-right fa-2x"></i> --><a href="{{GM.GL}}" ng-bind="GM.GD"></a>
+				    		<div ng-bind="GM.GL"></div>
 				    	</div>
 				    </div>
 			      <div class="row card-grid" style="margin-bottom:0px;">
