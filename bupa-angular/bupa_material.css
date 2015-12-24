@@ -29,6 +29,10 @@
 	padding:0 15px
 }
 
+.bupa-material ul.gsa_collections_holder {
+    min-width: 971px;
+}
+
 .result-card{
   font-size:14px;
 }
