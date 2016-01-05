@@ -150,9 +150,9 @@ i.check {
 }
 
 i.cta {
-  width:18px;
-  height: 16px;
-  background: url('https://rawgit.com/stoneburnsoftware/gsa-resources/master/bupa-angular/img/cover details.png') no-repeat 0 0 transparent;
+	width: 22px;
+    height: 26px;
+    background: url('https://rawgit.com/stoneburnsoftware/gsa-resources/master/bupa-angular/img/cover details.png') no-repeat 0 0/22px 26px transparent;
 }
 
 i.phone {
