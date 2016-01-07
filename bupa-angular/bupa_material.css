@@ -111,12 +111,12 @@ a.view-more:active {
 	width: 150px;
     display: table-cell;
     padding-left: 10px;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .snippet-col {
 	display: table-cell;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .l-table {
